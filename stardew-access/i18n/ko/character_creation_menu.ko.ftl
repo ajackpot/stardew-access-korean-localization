@@ -2,408 +2,408 @@
 
 ## Default Controls
 
-menu-character_creation-farmer_name_text_box = Farmer's name {$value ->
-    [null] text box
+menu-character_creation-farmer_name_text_box = 농부 이름 {$value ->
+    [null] 텍스트 필드
     *[other] : {$value}
   }
-menu-character_creation-farm_name_text_box = Farm's name {$value ->
-    [null] text box
+menu-character_creation-farm_name_text_box = 농장 이름 {$value ->
+    [null] 텍스트 필드
     *[other] : {$value}
   }
-menu-character_creation-favorite_thing_text_box = Favorite thing {$value ->
-    [null] text box
+menu-character_creation-favorite_thing_text_box = 좋아하는 것 {$value ->
+    [null] 텍스트 필드
     *[other] : {$value}
   }
-menu-character_creation-previous_pet_button = Previous pet button
-menu-character_creation-next_pet_button = Next pet button
-menu-character_creation-current_pet-prefix = Current pet: {$content}
-menu-character_creation-random_skin_button = Random skin button
+menu-character_creation-previous_pet_button = 이전 애완동물 버튼
+menu-character_creation-next_pet_button = 다음 애완동물 버튼
+menu-character_creation-current_pet-prefix = 현재 애완동물: {$content}
+menu-character_creation-random_skin_button = 랜덤 외형 버튼
 menu-character_creation-gender_button = {$is_selected ->
     [0] {EMPTYSTRING()}
-    *[1] Selected
+    *[1] 선택됨
   } Gender: {$is_male ->
-    [0] Female
-    *[1] Male
-  } button
+    [0] 여자
+    *[1] 남자
+  } 버튼
 menu-character_creation-farm_type_buttons = {$is_selected ->
     [0] {EMPTYSTRING()}
-    *[1] Selected
+    *[1] 선택됨
   } {$value}
-menu-character_creation-next_farm_type_page_button = Next farm type page button
-menu-character_creation-previous_farm_type_page_button = Previous farm type page button
-menu-character_creation-farm_type_locked_info = Reach level 10 {$farm_name} to unlock.
+menu-character_creation-next_farm_type_page_button = 다음 농장 유형 페이지 버튼
+menu-character_creation-previous_farm_type_page_button = 이전 농장 유형 페이지 버튼
+menu-character_creation-farm_type_locked_info = 10레벨에 도달하여 {$farm_name} 잠금 해제.
 menu-character_creation-skip_intro_button = {$is_enabled ->
-    [0] Disabled
-    *[1] Enabled
-  } skip intro button
-menu-character_creation-advanced_options_button = Advanced options button
-menu-character_creation-character_design_controls_usage_info = Press left control + space to toggle character appearance controls
-menu-character_creation-character_design_controls_toggle_info = Character design controls {$is_enabled ->
-    [0] hidden
-    *[1] shown
+    [0] 끔
+    *[1] 켬
+  } 인트로 스킵 버튼
+menu-character_creation-advanced_options_button = 고급 옵션 버튼
+menu-character_creation-character_design_controls_usage_info = 왼쪽 컨트롤 + 스페이스키를 눌러 캐릭터 외형 컨트롤을 전환하세요
+menu-character_creation-character_design_controls_toggle_info = 캐릭터 디자인 컨트롤 : {$is_enabled ->
+    [0] 숨김
+    *[1] 표시
   }
 
-## Co-op controls
+## 협동 플레이 컨트롤
 
-menu-character_creation-decrease_starting_cabins_button = Decrease starting cabins button
+menu-character_creation-decrease_starting_cabins_button = 시작 오두막집 수 감소 버튼
 menu-character_creation-starting_cabins_label = Starting cabins: {$value}
-menu-character_creation-increase_starting_cabins_button = Increase starting cabins button
-menu-character_creation-cabin_layout_nearby_button = Cabin layout to nearby button
-menu-character_creation-cabin_layout_separate_button = Cabin layout to separate button
-menu-character_creation-increase_profit_margin_button = Increase profit margin button
+menu-character_creation-increase_starting_cabins_button = 시작 오두막집 수 증가 버튼
+menu-character_creation-cabin_layout_nearby_button = 오두막집을 가까이 배치 버튼
+menu-character_creation-cabin_layout_separate_button = 오두막집을 분리하여 배치 버튼
+menu-character_creation-increase_profit_margin_button = 수익율 증가 버튼
 # The 'value' will be 'normal' instead of `1`. So translate that here as shown in example below.
 # Example: {$value ->
 #     [normal] <normal equivalent to your language here>
 #     *[other] {$value}
 #   }
-menu-character_creation-profit_margin_label = Profit margin: {$value}
-menu-character_creation-decrease_profit_margin_button = Decrease profit margin button
-menu-character_creation-money_style_separate_wallets_button = Money style to {$separate_wallets ->
-[0] shared
-*[1] separate
-  } wallets button
+menu-character_creation-profit_margin_label = 수익율: {$value}
+menu-character_creation-decrease_profit_margin_button = 수익율 감소 버튼
+menu-character_creation-money_style_separate_wallets_button = 돈 관리 스타일: {$separate_wallets ->
+[0] 공유
+*[1] 개별
+  } 지갑 버튼
 
-## Character design controls
+## 캐릭터 디자인 컨트롤
 
-menu-character_creation-rotate_left_button = Rotate left button
-menu-character_creation-rotate_right_button = Rotate right button
-menu-character_creation-eye_color_hue_slider = Eye color hue slider
-menu-character_creation-eye_color_saturation_slider = Eye color saturation slider
-menu-character_creation-eye_color_value_slider = Eye color value slider
-menu-character_creation-hair_color_hue_slider = Hair color hue slider
-menu-character_creation-hair_color_saturation_slider = Hair color saturation slider
-menu-character_creation-hair_color_value_slider = Hair color value slider
-menu-character_creation-pants_color_hue_slider = Pants color hue slider
-menu-character_creation-pants_color_saturation_slider = pants color saturation slider
-menu-character_creation-pants_color_value_slider = Pants color value slider
+menu-character_creation-rotate_left_button = 왼쪽으로 회전 버튼
+menu-character_creation-rotate_right_button = 오른쪽으로 회전 버튼
+menu-character_creation-eye_color_hue_slider = 눈 색상 색조 슬라이더
+menu-character_creation-eye_color_saturation_slider = 눈 색상 채도 슬라이더
+menu-character_creation-eye_color_value_slider = 눈 색상 값 슬라이더
+menu-character_creation-hair_color_hue_slider = 머리 색상 색조 슬라이더
+menu-character_creation-hair_color_saturation_slider = 머리 색상 채도 슬라이더
+menu-character_creation-hair_color_value_slider = 머리 색상 값 슬라이더
+menu-character_creation-pants_color_hue_slider = 바지 색상 색조 슬라이더
+menu-character_creation-pants_color_saturation_slider = 바지 색상 채도 슬라이더
+menu-character_creation-pants_color_value_slider = 바지 색상 값 슬라이더
 
-menu-character_creation-previous_button_with_label = Previous {$label} button
-menu-character_creation-next_button_with_label = Next {$label} button
-menu-character_creation-label-skin = Skin tone
-menu-character_creation-label-hair = Hair style
-menu-character_creation-label-shirt = Shirt
-menu-character_creation-label-pants_style = Pants style
-menu-character_creation-label-acc = Accessory
+menu-character_creation-previous_button_with_label = 이전 {$label} 버튼
+menu-character_creation-next_button_with_label = 다음 {$label} 버튼
+menu-character_creation-label-skin = 피부 톤
+menu-character_creation-label-hair = 머리 스타일
+menu-character_creation-label-shirt = 셔츠
+menu-character_creation-label-pants_style = 바지 스타일
+menu-character_creation-label-acc = 엑세서리
 
-menu-character_creation-label-eye_color = Eye color
-menu-character_creation-label-hair_color = Hair color
-menu-character_creation-label-pants_color = Pants color
-menu-character_creation-label-hue = Hue
-menu-character_creation-label-saturation = Saturation
-menu-character_creation-label-value = Value
+menu-character_creation-label-eye_color = 눈 색상
+menu-character_creation-label-hair_color = 머리 색상
+menu-character_creation-label-pants_color = 바지 색상
+menu-character_creation-label-hue = 색조
+menu-character_creation-label-saturation = 채도
+menu-character_creation-label-value = 값
 
 ### Descriptions
 
 menu-character_creation-description-cat = {$less_info ->
     [0] {$breed ->
-      [1] Orange cat
-      [2] Gray Tabby cat with white belly
-      [3] Yellow cat with purple collar
-      [4] Cream colored cat
-      [5] Black cat with yellow eyes
-      *[other] Undescribed cat {$breed}
+      [1] 주황색 cat
+      [2] 흰 배를 가진 회색 얼룩고양이
+      [3] 보라색 깃을 한노란 고양이
+      [4] 크림색 고양이
+      [5] 노란 눈 검은 고양이
+      *[other] 알 수 없는 고양이 {$breed}
     }
-    *[1] Cat {$breed}
+    *[1] 고양이 {$breed}
   }
 
 menu-character_creation-description-dog = {$less_info ->
     [0] {$breed ->
-      [1] Golden-brown Hound with blue collar
-      [2] Brown Shepherd
-      [3] Tan body, brown eared, long furred terrier
-      [4] Grey and white shepherd with a red bandana
-      [5] Brown retriever
-      *[other] Undescribed dog {$breed}
+      [1] 파란 깃을 한 황갈색 하운드
+      [2] 갈색 셰퍼드
+      [3] 황갈색 몸통, 갈색 귀, 긴 털을 가진 테리어
+      [4] 회색과 흰색털을 가진 셰퍼드  빨간 네커치프
+      [5] 갈색 리트리버
+      *[other] 알 수 없는 개 {$breed}
     }
-    *[1] Dog {$breed}
+    *[1] 개 {$breed}
   }
 
 menu-character_creation-description-turtle = {$less_info ->
     [0] {$breed ->
-      [1] Green Turtle
-      [2] Purple Turtle
-      *[other] Undescribed turtle {$breed}
+      [1] 초록 거북이
+      [2] 보라 거북이
+      *[other] 알 수 없는 거북이 {$breed}
     }
-    *[1] Turtle {$breed}
+    *[1] 거북이 {$breed}
   }
 
 menu-character_creation-description-skin = {$less_info ->
     [0] {$index ->
-      [1] Pale, beige undertone
-      [2] Tan, pink undertone
-      [3] Pale, pink undertone
-      [4] Pale
-      [5] Brown, red undertone
-      [6] Brown, pink undertone
-      [7] Brown, warm tone
-      [8] Beige, orange undertone
-      [9] Light Brown
-      [10] Pale, pink overtone
-      [11] Pale, grey undertone
-      [12] Tan, warm tone
-      [13] Pale Green
-      [14] Pale Fuchsia
-      [15] Brown, full tone
-      [16] Tan, red overtone
-      [17] Pale Blue
-      [18] Green
-      [19] Pale Red
-      [20] Pale Purple
-      [21] Yellow, full tone
-      [22] Gray
-      [23] Pale, yellow undertone
-      [24] Pale, ivory undertone
-      *[other] Undescribed skin tone {$index}
+      [1] 창백한, 베이지색 언더톤
+      [2] 황갈색, 분홍색 언더톤
+      [3] 창백한, 분홍색 언더톤
+      [4] 창백한
+      [5] 갈색, 빨간색 언더톤
+      [6] 갈색, 분홍색 언더톤
+      [7] 갈색, 따듯한 톤
+      [8] 베이지, 주황색 언더톤
+      [9] 밝은 갈색
+      [10] 창백한, 분홍색 오버톤
+      [11] 창백한, 회색 오버톤
+      [12] 갈색, 따듯한 톤
+      [13] 창백한 초록색
+      [14] 창백한 자홍색
+      [15] 갈색, 풀 톤
+      [16] 갈색, 빨강색 오버톤
+      [17] 창백한 파란색
+      [18] 초록
+      [19] 창백한 빨강
+      [20] 창백한 보라
+      [21] 노란색, 풀 톤
+      [22] 회색
+      [23] 창백한, 노랑 언더톤
+      [24] 창백한, 아이보리 언더톤
+      *[other] 알 수 없는 피부톤 {$index}
     }
-    *[1] Skin: {$index}
+    *[1] 피부: {$index}
   }
-
+색
 menu-character_creation-description-hair = {$less_info ->
     [0] {$index ->
-      [1] Right-side part, short and unkempt
-      [2] Middle-part, six inches length
-      [3] Left-side part, swept bangs, combed back
-      [4] Afro
-      [5] Right-side part, unkempt with bangs
-      [6] Shaved back and sides
-      [7] Right-part open pompadour, chin length
-      [8] Right-part, short and combed back
-      [9] Right-part with bangs, large wayward spikes
-      [10] Right-part, side bob
-      [11] Pompadour, short and combed back
-      [12] Short with faded sides, combed back
-      [13] Middle-part, low ponytail
-      [14] Wayward dreads, six inches length, undershave
-      [15] Left-part with long bang, combed back
-      [16] Middle-part, 4 inches length, undercut
-      [17] Right-part, high ponytail, swept bangs
-      [18] Right-side part, shoulder length, low pigtails
-      [19] Right-side part, short with long swept bangs
-      [20] Updo, three tight buns on top of head
-      [21] Short and combed
-      [22] Right-side part, short, high pigtails
-      [23] Right-side part with bangs, tight high bun
-      [24] Right-side part with bangs, unkempt, six inches
-      [25] Right-side part, swept bangs, mid-back length
-      [26] Fifties style, teased, curly ended bob
-      [27] Middle-part, thigh-length
-      [28] Right-side part, swept bangs, chin length
-      [29] Middle-part, waist length, low ponytail
-      [30] Waist length with bangs, straight, tapered ends
-      [31] Right-side part with bangs, low pigtails
-      [32] Dual twisted side-buns, Princess Leia style
-      [33] Right-side part, swept bangs, short
-      [34] Right-side part, hip-length, pigtail braids
-      [35] Right-side part, mid-back length, pigtail braids
-      [36] High ponytail, mini bangs
-      [37] Middle-part, swept over right shoulder
-      [38] Right side part with bangs, high pigtails
-      [39] Black hairband, chin length
-      [40] Black hairband with bangs, shoulder length
-      [41] Left-side part, loose curls, shoulder length
-      [42] Shoulder length with mini bangs, curly
-      [43] Long on top with highlights, combed back
-      [44] Right-side part, swept bangs, short
-      [45] Middle-part, fade with 4 inches on top
-      [46] Cornrows, chin length
-      [47] Left-side part, short and combed
-      [48] Middle-part, swept bangs, chin length
-      [49] Middle-part, unkempt, partial ponytail
-      [50] Liberty spike style, shaved sides
-      [51] Donut cut, shoulder length
-      [52] Donut cut, short
-      [53] Bald or shaved
-      [54] Shaved, half-inch length, widow's peak
-      [55] Shaved, half-inch length, unkempt
-      [56] Shaved, half-inch length, straight hairline
-      [101] Left-side part with bangs, wavy, waist length
-      [102] Right-side part, hip-length, curly
-      [103] Right-side part, waist length, straight
-      [104] Middle-part, waist length, low ponytail
-      [105] Middle-part, waist length, high braid
-      [106] Right-side part with bangs, swept to shoulder
-      [107] Right-side part, unkempt, swept to shoulder
-      [108] Bob with bangs
-      [109] Left-side part, short, combed
-      [110] Wavy with bangs, 8 inches
-      [111] Wavy with bangs, shoulder length
-      [112] Dreads, neat, 4 inches length
-      [113] Short and unkempt
-      [114] Middle-part, six inches length
-      [115] Right-side part, shoulder length, unkempt
-      [116] Middle-part, teased, shoulder length
-      [117] Middle-part with bangs, short
-      [118] Left-side part with bangs, unkempt, short
-      *[other] Undescribed hair style {$index}
+      [1] 오른쪽 부분, 짧고 단정하지 못한 머리
+      [2] 중간 부분, 6인치 길이 머리
+      [3] 왼쪽 부분, 스웹트 뱅, 뒤로 빗어넘긴 머리
+      [4] 아프로 머리
+      [5] 오른쪽 부분, 앞머리를 내린 머리
+      [6] 짧은 뒷머리, 옆머리
+      [7] 오른쪽 부분 탁 트인 퐁파두르, 턱 길이 머리
+      [8] 오른쪽 부분, 짧고 뒤로 뒤로 빗어넘긴 머리
+      [9] 오른쪽 부분 뱅, 불안정한 뾰족머리
+      [10] 오른쪽 부분, 사이드봅 머리
+      [11] 퐁파두르, 짧고 뒤로 뒤로 빗어넘긴 머리
+      [12] 옆구리가 빈 짧은, 뒤로 빗어넘긴 머리
+      [13] 중간 부분, 낮은 포니테일 머리
+      [14] 불안정한 드리드, 6인치 길이, 아래만 민 머리
+      [15] 왼쪽 부분 긴 뱅, 뒤로 빗어넘긴 머리
+      [16] 가운데 부분, 4인치 길이, 언더컷 머리
+      [17] 오른쪽 부분, 높은 포니테일, 스웹트 뱅 머리
+      [18] 오른쪽 부분, 어께 길이, 낮은 피그테일 머리
+      [19] 오른쪽 부분, 짧은 머리 긴 스웹트 뱅 머리
+      [20] 업두, 타이트한 삼중 똥머리
+      [21] 짧고 뒤로 빗질한 머리
+      [22] 오른쪽 부분, 짧은, 높은 피그테일 머리
+      [23] 오른쪽 부분 뱅, 타이트한 높은 똥머리
+      [24] 오른쪽 부분 뱅, 엉성한, 6인치 머리
+      [25] 오른쪽 부분, 스웹트 뱅, 등 중간 길이 머리
+      [26] 50년대 스타일, 헝크러진, 곱슬곱슬한 봅 머리
+      [27] 가운데 부분, 허벅지 길이 머리
+      [28] 오른쪽 부분, 스웹트 뱅, 턱 길이 머리
+      [29] 가운데 부분, 허리 길이, 낮은 포니테일 머리
+      [30] 허리 길이 뱅, 스트레이트, 끝이 가는 머리
+      [31] 오른쪽 부분 뱅, 낮은 피그테일 머리
+      [32] 양쪽으로 땋은 머리, 레이아 공주 스타일 머리
+      [33] 오른쪽 부분, 스웹트 뱅, 짧은 머리
+      [34] 오른쪽 부분, 엉덩이 길이, 피그테일 땋은 머리
+      [35] 오른쪽 부분, 등 중간 길이, 피그테일 땋은 머리
+      [36] 높은 포니테일, 미니 뱅
+      [37] 가운데 부분, 오른쪽 어께로 쓸어넘긴
+      [38] 오른쪽 부분 뱅, 높은 피그테일
+      [39] 뒤에 헤어밴드를 한, 턱 길이
+      [40] 뒤에 헤어밴드를 한 뱅, 어께 길이
+      [41] 왼쪽 부분, 풀어진 곱슬머리, 어께 길이
+      [42] 어께 길이 미니 뱅, 곱슬머리
+      [43] 롱탑 강조, 뒤로 빗어넘긴
+      [44] 오른쪽 부분, 스웹트 뱅, 짧은 머리
+      [45] 가운데 부분, 4인치 위로 빈 머리
+      [46] 콘로즈, 턱 길이
+      [47] 왼쪽 부분, 짧고 뒤로 빗질한 머리
+      [48] 가운데 부분, 스웹트 뱅, 턱 길이 머리
+      [49] 가운데 부분, 엉성한, 부분 포니테일 머리
+      [50] 해방의 스파이크 머리, 측면 깍인 머리
+      [51] 도넛 컷, 어께 길이
+      [52] 도넛 컷, 짧은 머리
+      [53] 대머리 또는 삭발
+      [54] 깎인, 0.5인치 길이, 위도우피크
+      [55] 깎인, 0.5인치 길이, 엉성한
+      [56] 깎인, 0.5인치 길이, 스트레이트 헤어라인
+      [101] 왼쪽 부분 뱅, 웨비, 허리 길이
+      [102] 오른쪽 부분, 엉덩이 길이, 곱슬머리
+      [103] 오른쪽 부분, 허리 길이, 스트레이트
+      [104] 가운데 부분, 허리 길이, 낮은 포니테일
+      [105] 가운데 부분, 허리 길이, 높은 땋은 머리
+      [106] 오른쪽 부분 뱅, 어께로 빗어 넘긴
+      [107] 오른쪽 부분, 엉성한, 어께로 빗어넘긴
+      [108] 봅 뱅
+      [109] 왼쪽 부분, 짧은 머리, 빗질한 머리
+      [110] 웨이브 뱅, 8인치
+      [111] 웨이브 뱅, 어께 길이
+      [112] 드리드, 니트, 4인치 길이
+      [113] 짧고 단정하지 못한
+      [114] 가운데 부분, 6인치 길이
+      [115] 오른쪽 부분, 어께 길이, 엉성한
+      [116] 가운데 부분, 헝클어진, 어께 길이
+      [117] 가운데 부분 뱅, 짧은 머리
+      [118] 왼쪽 부분 뱅, 엉성한, 짧은 머리
+      *[other] 알 수 없는 머리 스타일 {$index}
     }
-    *[1] Hair: {$index}
+    *[1] 머리: {$index}
   }
 
 menu-character_creation-description-shirt = {$less_info ->
     [0] {$index ->
-      [1001] Red, denim overalls
-      [1002] Brown button up
-      [1003] Light Green, brown belt
-      [1004] Black, gray splat design
-      [1005] Black skull design
-      [1006] Blue Gray, cloud design
-      [1007] Cream, light blue horizontal stripe
-      [1008] Green, denim overalls
-      [1009] Yellow, brown horizontal zig zag
-      [1010] Blue Green, cloud design
-      [1011] Black, white letter A
-      [1012] Green, collar cinches
-      [1013] Lime Green, green stripes
-      [1014] Red, white horizontal stripes
-      [1015] Black, white ribcage design
-      [1016] Brown, Tan, Light Brown stripes
-      [1017] Blue, yellow dots
-      [1018] Green, brown suspenders
-      [1019] Brown jacket, Gray tee
-      [1020] White, blue kerchief
-      [1021] Green tank, Gray tee
-      [1022] Ochre, green horizontal stripe
-      [1023] Red button up
-      [1024] Green button up
-      [1025] Light Blue button up
-      [1026] Blue button up
-      [1027] Sea Green, horizontal white stripe
-      [1028] Purple, light equal sign design
-      [1029] Black, purple heart design
-      [1030] White vertical gradient
-      [1031] Brown jacket, Black shirt
-      [1032] Brown Gray, angled button up
-      [1033] Red, brown belt
-      [1034] Green, strung collar
-      [1035] Green bodice, gold belt, brown sleeves
-      [1036] Red, white collar, buttoned
-      [1037] Light Purple, zippered
-      [1038] Gray to Black vertical gradient
-      [1039] White, wide collar
-      [1040] Sea Green and Brown stripes
-      [1041] Purple vertical gradient
-      [1042] White, horizontal cream stripe
-      [1043] Green vertical gradient, belt
-      [1044] Blue vertical gradient
-      [1045] Blue, strung collar, white spot
-      [1046] Brown vertical gradient
-      [1047] Purple Vertical Gradient
-      [1048] Brown, silver belt
-      [1049] Black, gray bat design
-      [1050] Light Purple, purple stripe
-      [1051] Light Pink tank, purple shirt
-      [1052] Pink tank, light purple tee
-      [1053] Purple, vertical rainbow column
-      [1054] Black, green belt
-      [1055] Sea Green, white shoulder stripe
-      [1056] Red, horizontal yellow stripe
-      [1057] Lime Green, wide collar
-      [1058] White and Gray stripes, red vest
-      [1059] Blue, light blue shoulder stripe
-      [1060] Ochre, yellow shoulder stripe
-      [1061] Blue, wide collar
-      [1062] Tan, stripes and dots
-      [1063] Blue, white collar and stripe
-      [1064] Red, silver collar
-      [1065] Patchwork Blue
-      [1066] Green, white undershirt
-      [1067] Gray, mouse face design
-      [1068] Yellow, low overalls
-      [1069] Light Green, upper frog face
-      [1070] Green, brown belt
-      [1071] Fuchsia, light purple stripe
-      [1072] White, denim overalls, brown belt
-      [1073] Cream crop hoodie, blue tank
-      [1074] Dark Blue and Purple horizontal split
-      [1075] Blue, red overalls, brown belt
-      [1076] Black, green mushroom cloud design
-      [1077] Light Purple, brown belt
-      [1078] White, tongue out frowny face
-      [1079] Purple, white kerchief
-      [1080] Black, blue overalls
-      [1081] Gray, white shoulder stripe
-      [1082] Green, light green waist stripe
-      [1083] Dark Blue
-      [1084] Black, wide collar
-      [1085] Black
-      [1086] Red, button up, open neck
-      [1087] Teal, brown suspenders
-      [1088] White button up, red kerchief
-      [1089] Yellow, green vest
-      [1090] Purple Bowling Style
-      [1091] Black Hoodie
-      [1092] Green, collared, white kerchief
-      [1093] Pink, light pink shoulder stripe
-      [1094] White, black spots
-      [1095] Brown, red and yellow tie
-      [1096] Yellow, black eyes with blush
-      [1097] Green, dark green spots
-      [1098] Gray, button up, dark vertical stripe
-      [1099] Black peacoat, white shirt collar
-      [1100] Purple, black overalls
-      [1101] Light Blue, horizontal dark stripe
-      [1102] Black, white front
-      [1103] Canvas, blond leather belt
-      [1104] Gray stripes, black overalls
-      [1105] Green and Teal stripes
-      [1106] Blue, white letter J
-      [1107] Green and Black Horizontal split
-      [1108] Fuchsia, white shoulder stripe
-      [1109] Brown Orange
-      [1110] Purple button up, dark vertical stripe
-      [1111] Brown button up, dark vertical stripe
-      [1112] Olive green, dark vertical stripe
-      *[other] Undescribed shirt {$index}
+      [1001] 빨간색, 데님 맬빵바지
+      [1002] 갈색 버튼 업
+      [1003] 밝은 초록, 갈색 벨트
+      [1004] 검은색, 회색 튀는 디자인
+      [1005] 검은 해골 디자인
+      [1006] 푸른 회색, 구름 디자인
+      [1007] 크림색, 밝은 파란 가로 줄무늬
+      [1008] 초록, 데님 맬빵바지
+      [1009] 노랑색, 갈색 가로 지그재그
+      [1010] 파란색 초록, 구름 디자인
+      [1011] 검정색, 흰색 알파벳 A 티
+      [1012] 초록, 카라 안장띠
+      [1013] 라임색, 초록색 줄무늬
+      [1014] 빨간색, 흰색 가로 줄무늬
+      [1015] 검정색, 흰색 갈비뼈 디자인
+      [1016] 갈색, 갈색, 밝은 갈색 줄무늬
+      [1017] 파란색, 노랑색 떙땡이
+      [1018] 초록, 갈색 맬빵바지
+      [1019] 갈색 제킷, 회색 티
+      [1020] 흰색, 파란 커치프
+      [1021] 초록 갈색k, 회색 티
+      [1022] 황토색, 초록색 가로 줄무늬
+      [1023] 빨간색 버튼 업
+      [1024] 초록 버튼 업
+      [1025] 밝은 파란색 버튼 업
+      [1026] 파란색 버튼 업
+      [1027] 바다초록, 가로 흰색 줄무늬
+      [1028] 보라, 밝은 등호 기호 디자인
+      [1029] 검정색, 보라색 하트 디자인
+      [1030] 흰색 세로 그라데이션
+      [1031] 갈색 제킷, 검정색 셔츠
+      [1032] 갈색 회색, 애글 버튼 업
+      [1033] 빨간색, 갈색 벨트
+      [1034] 초록, 목이 좁은 카라
+      [1035] 초록 보디체, 금색 벨트, 갈색 셔츠
+      [1036] 빨간색, 흰색 카라, 버튼 셔츠
+      [1037] 밝은 보라색, 지퍼가 달린 셔츠
+      [1038] 회색에서 검정색 세로 그라데이션 셔츠
+      [1039] 흰색, 넓은 카라 셔츠
+      [1040] 바다초록과 갈색 줄무늬 셔츠
+      [1041] 보라색 세로 그라데이션
+      [1042] 흰색, 가로 크림색 줄무늬
+      [1043] 초록 세로 그라데이션, 벨트
+      [1044] 파란색 세로 그라데이션
+      [1045] 파란색, 목이 좁은 카라, 흰색 spot
+      [1046] 갈색 세로 그라데이션
+      [1047] 보라색 세로 그라데이션
+      [1048] 갈색, 은색 벨트
+      [1049] 검정색, 회색 박쥐 디자인
+      [1050] 밝은 보라색, 보라 줄무늬
+      [1051] 밝은 분홍 탱크, 보라 셔츠
+      [1052] 분홍 탱크, 밝은 보라 티
+      [1053] 보라색, 세로 무지개 열 티
+      [1054] 검정색, 초록색 벨트
+      [1055] 바타초록, 흰색 어께 줄무늬
+      [1056] 빨간색, 가로 노랑색 줄무늬
+      [1057] 라임색, 넓은 카라
+      [1058] 흰색과 회색 줄무늬, 빨간색 조끼
+      [1059] 파란색, 밝은 파란 어께 줄무늬
+      [1060] 황토색, 노랑색 어께 줄무늬
+      [1061] 파란색, 넓은 카라
+      [1062] 갈색, 줄무늬와 떙땡이
+      [1063] 파란색, 흰색 카라와 줄무늬
+      [1064] 빨간색, 은색 카라
+      [1065] 페치워크 파란색
+      [1066] 초록, 흰색 언더셔츠
+      [1067] 회색, 쥐 얼굴 디자인 티
+      [1068] 노랑색, 낮은 맬빵 티
+      [1069] 밝은 초록, 개구리 얼굴 티
+      [1070] 초록, 갈색 벨트
+      [1071] 자홍색, 밝은 보라 줄무늬
+      [1072] 흰색, 데님 맬빵바지, 갈색 벨트
+      [1073] 크림 크롭 후드티, 파란 탱크
+      [1074] 어두운 파랑과 보라색 가로 스플릿
+      [1075] 파란색, 빨간색 맬빵바지, 갈색 벨트
+      [1076] 검정색, 초록색 버섯 구름 디자인
+      [1077] 밝은 보라색, 갈색 벨트
+      [1078] 흰색, 혀를 내민 찡그린 얼굴 디자인 티
+      [1079] 보라색, 흰색 커차프
+      [1080] 검정색, 파란 맬빵바지
+      [1081] 회색, 흰색 어께 줄무늬
+      [1082] 초록, 밝은 초록색 허리 줄무늬
+      [1083] 어두운 파란색
+      [1084] 검정색, 넓은 카라
+      [1085] 검정색
+      [1086] 빨간색, 버튼 업, 오픈 넥
+      [1087] Teal, 갈색 맬빵바지
+      [1088] 흰색 버튼 업, 빨간색 커차프
+      [1089] 노랑색, 초록색 조끼
+      [1090] 보라색 따분한 스타일 셔츠
+      [1091] 검정색 후드
+      [1092] 초록, 카라, 흰색 커차프
+      [1093] Pink, 밝은 분홍 어께 줄무늬
+      [1094] 흰색, 검은 점
+      [1095] 갈색, 빨간색과 노랑색 타이
+      [1096] 노랑색, 홍조 뛴 검정색 눈
+      [1097] 초록, 어두운 초록색 점
+      [1098] 회색, 버튼 업, 어두운 세로 줄무늬
+      [1099] 검정색 피 코트, 흰색 셔츠 카라
+      [1100] 보라색, 검정색 맬빵바지
+      [1101] 밝은 파란색, 가로 어두운 줄무늬
+      [1102] 검정색, 흰색 앞면
+      [1103] 캔버스, 금빛 가죽 벨트
+      [1104] 회색 줄무늬, 검정색 맬빵바지
+      [1105] 초록색과 틸색 줄무늬
+      [1106] 파란색, 흰색 알파벳 J
+      [1107] 초록색과 검정색 가로 스플릿
+      [1108] 자홍색, 흰색 어께 줄무늬
+      [1109] 갈색 주황색
+      [1110] 보라색 버튼 업, 어두운 세로 줄무늬
+      [1111] 갈색 버튼 업, 어두운 세로 줄무늬
+      [1112] 올리브 초록색, 어두운 세로 줄무늬
+      *[other] 알 수 없는 셔츠 {$index}
     }
-    *[1] Shirt: {$index}
+    *[1] 셔츠: {$index}
   }
 
 menu-character_creation-description-pant = {$less_info ->
     [0] {$index ->
-      [1] Long
-      [2] Shorts
-      [3] Long Skirt
-      [4] Skirt
+      [1] 긴
+      [2] 짧은
+      [3] 롱스커트
+      [4] 스커트
       *[other] {EMPTYSTRING()}
     }
-    *[1] Pants Style: {$index}
+    *[1] 바지 스타일: {$index}
   }
 
-# For accessories
+# 악세서리
 menu-character_creation-description-acc = {$less_info ->
     [0] {$index ->
-      [1] Blank
-      [2] Full beard and mustache
-      [3] Full mustache
-      [4] Full mustache wrinkles
-      [5] Goatee
-      [6] Mutton chops
-      [7] Full beard and mustache, untrimmed
-      [8] Gold earrings
-      [9] Turquoise earrings
-      [10] Black full-frame glasses
-      [11] Lipstick
-      [12] Top-frame glasses
-      [13] Bushy eyebrows
-      [14] Robo-visor
-      [15] Circular black frame glasses
-      [16] Red necklace
-      [17] Black sunglasses
-      [18] Blue necklace
-      [19] Gray sunglasses
-      [20] Orange beak
-      [21] Five o'clock shadow
-      [22] Bushy beard
-      [23] Pencil mustache
-      [24] Handlebar mustache
-      [25] Tanned face (includes head if bald)
-      [26] Red clown nose
-      [27] Square wire-framed glasses
-      [28] Prominent black eyebrows
-      [29] Blushing cheeks
-      [30] Pink lipstick
-      [31] Bronzer
-      *[other] Undescribed accessory {$index}
+      [1] 없음
+      [2] 수북한 턱수염과 콧수염
+      [3] 수북한 콧수염
+      [4] 주름있는 수북한 콧수염
+      [5] 염소수염
+      [6] 머튼찹스 구레나룻
+      [7] 다듬지 않은 수북한 턱수염과 콧수염
+      [8] 금 귀걸이
+      [9] 청금석 귀걸이
+      [10] 검정색 풀 프레임 안경
+      [11] 립스틱
+      [12] 윗태 안경
+      [13] 덥수룩한 눈썹
+      [14] 스카우터
+      [15] 원형 검정색 태 안경
+      [16] 빨간색 목걸이
+      [17] 검정색 선글라스
+      [18] 파란색 목걸이
+      [19] 회색 선글라스
+      [20] 주황색 부리
+      [21] 다섯시 그림자
+      [22] 덥수룩한 수염
+      [23] 얇은 콧수염
+      [24] 핸들바 콧수염
+      [25] 탄 얼굴 (대머리인 경우 머리 포함)
+      [26] 빨간색 광대코
+      [27] 사각 와이어프레임 안경
+      [28] 저명한 검정색 눈썹
+      [29] 홍조
+      [30] 핑크 립스틱
+      [31] 브론저
+      *[other] 알 수 없는 엑세서리 {$index}
     }
-    *[1] Accessory: {$index}
+    *[1] 엑세서리: {$index}
   }

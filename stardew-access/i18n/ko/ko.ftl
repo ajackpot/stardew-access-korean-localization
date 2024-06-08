@@ -207,275 +207,275 @@ dynamic_tile-mastery_cave-pedestal = {$has_hat ->
 
 ## Interactable Tiles
 
-tile_name-ticket_machine = Ticket Machine
-tile_name-movie_ticket_machine = Movie Ticket Machine
-tile_name-missed_reward_chest = Missed Reward Chest
-tile_name-traveling_cart = Traveling Cart
-tile_name-traveling_cart_pig = Merchant's pig
+tile_name-ticket_machine = 매표기
+tile_name-movie_ticket_machine = 영화표 매표기
+tile_name-missed_reward_chest = 놓친 보상 상자
+tile_name-traveling_cart = 여행마차
+tile_name-traveling_cart_pig = 상인의 돼지
 tile_name-feeding_bench = {$is_empty ->
-    [1] Empty
+    [1] 비어있음
     *[0] {EMPTYSTRING()}
   } Feeding Bench
-tile_name-special_quest_board = Special Quest Board
-tile-museum_piece_showcase-suffix = {$content} Showcase
-tile_name-fridge = Fridge
-tile_name-mail_box = Mail Box
-tile_name-mail_box-unread_mail_count-prefix = {$mail_count} {$mail_count ->
-    [1] unread letter in
-    *[0] unread letters in
-  } {$content}
-tile_name-stove = Stove
-tile_name-sink = Sink
-tile-railroad-witch_statue-name = Witch Statue
-dynamic_tile-qi_nut_room-collection_box = Collection box
-dynamic_tile-farm-grandpa_shrine = Grandpa's Shrine{SIGNOFNUMBER($candles) ->
+tile_name-special_quest_board = 특수 주문 게시판
+tile-museum_piece_showcase-suffix = {$content} 쇼케이스
+tile_name-fridge = 냉장고
+tile_name-mail_box = 우편함
+tile_name-mail_box-unread_mail_count-prefix = {$content} {$mail_count ->
+    [1] 안 읽은 편지
+    *[0] 안 읽은 편지
+  } {$mail_count}개
+tile_name-stove = 스토브
+tile_name-sink = 싱크대
+tile-railroad-witch_statue-name = 마녀 조각상
+dynamic_tile-qi_nut_room-collection_box = 수집품상자
+dynamic_tile-farm-grandpa_shrine = 할아버지의 사당{SIGNOFNUMBER($candles) ->
     [positive] : {$candles} {$candles -> 
-      [1] Candle
-      *[other] Candles
-    } lit
+      [1] 양초
+      *[other] 양초
+    } 촛불 켬
     *[other] {EMPTYSTRING()}
   }
-tile-bundles-suffix = {$content} bundle
-tile-harvestable-prefix = Harvestable {$content}
-tile-busy-prefix = Busy {$content}
-tile_name-stepping_stone = Stepping stone
-tile_name-pathway = Pathway
-tile_name-flooring = Flooring
-tile-volcano_dungeon-pressure_pad = Pressure Pad
-tile-volcano_dungeon-gate = Gate
-tile-forest-giant_tree_sump = Giant Tree Stump
+tile-bundles-suffix = {$content} 번들
+tile-harvestable-prefix = 수확가능한 {$content}
+tile-busy-prefix = 바쁜 {$content}
+tile_name-stepping_stone = 징검다리
+tile_name-pathway = 오솔길
+tile_name-flooring = 마룻바닥
+tile-volcano_dungeon-pressure_pad = 갑압판
+tile-volcano_dungeon-gate = 대문
+tile-forest-giant_tree_sump = 거대한 나무 그루터기
 
 ## Entrances
 
-tile-mine_ladder-name = Ladder
-tile-mine_up_ladder-name = Up Ladder
-tile-mine_shaft-name = Shaft
-tile-mine_elevator-name = Elevator
-tile-town_festival_exit-name = Exit Festival
-entrance_name-secret_woods_entrance = Secret Woods Entrance
-tile-entrance = Entrance
-tile-door = Door
-tile-door_state-opened = Opened
-tile-door_state-closed = Closed
-tile-interior_door = Interior door
+tile-mine_ladder-name = 사다리
+tile-mine_up_ladder-name = 올라가는 사다리
+tile-mine_shaft-name = 갱로
+tile-mine_elevator-name = 엘레베이터
+tile-town_festival_exit-name = 축제 끝내기
+entrance_name-secret_woods_entrance = 비밀의 숲 입구
+tile-entrance = 입구
+tile-door = 문
+tile-door_state-opened = 열림
+tile-door_state-closed = 닫힘
+tile-interior_door = 인테리어 문
 
 # Items
 
-item_name-log = Log
-item_name-magic_ink = Magic Ink
-item-haley_bracelet-name = Haley's Bracelet
-item-lost_book-name = Lost Book
-item-suffix-book = {$content} Book
-item-suffix-not_usable_here = {$content}, not usable here
+item_name-log = 통나무
+item_name-magic_ink = 마법 잉크
+item-haley_bracelet-name = 헤일리의 브레이슬릿
+item-lost_book-name = 잃어버린 책
+item-suffix-book = {$content} 책
+item-suffix-not_usable_here = {$content}, 여기서는 사용할 수 없음
 item-quality_type = {$quality_index -> 
-    [1] Silver
-    [2] Gold
-    [3] Gold
-    *[4] Iridium
-  } Quality
+    [1] 은
+    [2] 금
+    [3] 금
+    *[4] 이리듐
+  } 품질
 item-stamina_and_health_recovery_on_consumption = {SIGNOFNUMBER($stamina_amount) ->
-    [positive] +{$stamina_amount} Energy and {SIGNOFNUMBER($health_amount) ->
-        [positive] +{$health_amount} Health
+    [positive] +{$stamina_amount} 기력과 {SIGNOFNUMBER($health_amount) ->
+        [positive] 체력 +{$health_amount}
         *[other] {EMPTYSTRING()}
       }
-    [negative] -{$stamina_amount} Energy
+    [negative] 기력 -{$stamina_amount}
     [zero] {SIGNOFNUMBER($health_amount) ->
-        [positive] +{$health_amount} Health
+        [positive] 체력 +{$health_amount}
         *[other] {EMPTYSTRING()}
       }
     *[other] {EMPTYSTRING()}
   }
-item-required_item_info = Requires {$name}
-item-sell_price_info = Sell Price: {$price}g
+item-required_item_info = {$name} 필요함
+item-sell_price_info = 판매 가격: {$price}g
 # In some cases we can't get the count of the dropped items and it is returned `0`
-item-dropped_item-info = Dropped Item: {$item_count ->
+item-dropped_item-info = 드랍된 아이템: {$item_count ->
     [0] {$item_name}
-    [1] 1 {$item_name}
-    *[other] {$item_count} {$item_name}s
+    [1] {$item_name} 1개
+    *[other] {$item_name} {$item_count}개
   }
 item-crafting_recipe_info = {$name} {$is_cooking_recipe ->
     [0] (crafting)
     *[1] (cooking)
   } {$description}
-item-mastery_cave-grandpa_letter = Grandpa's Letter
+item-mastery_cave-grandpa_letter = 할아버지의 편지
 item-mannequin-info = {$name}{$facing_direction ->
-    [0] , Facing north
-    [1] , Facing east
-    [3] , Facing west
+    [0] , 북향
+    [1] , 동향
+    [3] , 서향
     *[2] {EMPTYSTRING()}
   }{$items_on_display ->
     [null] {EMPTYSTRING()}
     *[other] , {$items_on_display}
   }
 
-building_name-shipping_bin = Shipping Bin
-building-parrot_perch-required_nuts = Parrots require {$item_count ->
-    [1] 1 nut
-    *[other] {$item_count} nuts
-  }
-building-parrot_perch-upgrade_state_idle = Empty Parrot Perch
-building-parrot_perch-upgrade_state_start_building = Parrots started building request
-building-parrot_perch-upgrade_state_building = Parrots building request
-building-parrot_perch-upgrade_state_complete = Request completed
-building-golden_parrot = Golden Parrot
+building_name-shipping_bin = 배송 상자
+building-parrot_perch-required_nuts = 앵무새가 {$item_count ->
+    [1] 황금호두 1개
+    *[other] 황금호두 {$item_count}개
+  }를 요구합니다.
+building-parrot_perch-upgrade_state_idle = 빈 앵무새 횃대
+building-parrot_perch-upgrade_state_start_building = 앵무새가 건축 요청을 시작했습니다
+building-parrot_perch-upgrade_state_building = 앵무새 건축 요청
+building-parrot_perch-upgrade_state_complete = 요청 완료
+building-golden_parrot = 황금앵무새
 
 # NPCs
 
-npc_name-old_mariner = Old Mariner
-npc_name-island_trader = Island Trader
-npc_name-emerald_gem_bird = Emerald Gem Bird
-npc_name-aquamarine_gem_bird = Aquamarine Gem Bird
-npc_name-ruby_gem_bird = Ruby Gem Bird
-npc_name-amethyst_gem_bird = Amethyst Gem Bird
-npc_name-topaz_gem_bird = Topaz Gem Bird
-npc_name-gem_bird_common = Gem Bird
+npc_name-old_mariner = 늙은 선원
+npc_name-island_trader = 섬 교역소
+npc_name-emerald_gem_bird = 에메랄드 보석새
+npc_name-aquamarine_gem_bird = 아쿠아마린 보석새
+npc_name-ruby_gem_bird = 루비 보석새
+npc_name-amethyst_gem_bird = 자수정 보석새
+npc_name-topaz_gem_bird = 토파즈 보석새 
+npc_name-gem_bird_common = 보석새
 npc-farm_animal_info = {$name}, {$type}, {$age} {$age ->
-    [1] month
-    *[other] months
+    [1]개월
+    *[other]개월
   }
-npc_name-horse_with_no_name = A horse with no name
-monster_name-armored = Armored {$monster_name}
-monster_name-big_slime = Big {$colorful ->
+npc_name-horse_with_no_name = 이름 없는 말
+monster_name-armored = 무장된 {$monster_name}
+monster_name-big_slime = {$holding ->
+    [0] {EMPTYSTRING()}
+    *[1] {$item_name} 아이템을 들고 있는
+} 큰 {$colorful ->
     [0] {EMPTYSTRING()}
     *[1] {$color} 
-  }Slime{$holding ->
-    [0] {EMPTYSTRING()}
-    *[1] holding {$item_name}
-  }
-monster_name-dangerous = Dangerous {$monster_name}
-monster_name-flying_purple_shorts = Flying Purple Shorts
-monster_name-mage = {$monster_name} Mage
-monster_name-mutant = Mutant {$monster_name}
-monster_name-slime = Slime
-monster_name-truffle_crab = Truffle Crab
+} 슬라임
+monster_name-dangerous = 위험한 {$monster_name}
+monster_name-flying_purple_shorts = 날아다니는 보라색 반바지
+monster_name-mage = {$monster_name} 마법사
+monster_name-mutant = 뮤턴트 {$monster_name}
+monster_name-slime = 슬라임
+monster_name-truffle_crab = 송로버섯 게
 
 # Event Tiles
 
-event_tile-egg_festival_shop-name = Egg Festival Shop
-event_tile-flower_dance_shop-name = Flower Dance Shop
-event_tile-soup_pot-name = Soup Pot
-event_tile-spirits_eve_shop-name = Spirit's Eve Shop
-event_tile-stardew_valley_fair_shop-name = Stardew Valley Fair Shop
-event_tile-slingshot_game-name = Slingshot Game
-event_tile-purchase_star_tokens-name = Purchase Star Tokens
-event_tile-the_wheel-name = The Wheel
-event_tile-fishing_challenge-name = Fishing Challenge
-event_tile-fortune_teller-name = Fortune Teller
-event_tile-grange_display-name = Grange Display
-event_tile-strength_game-name = Strength Game
-event_tile-free_burgers-name = Free Burgers
-event_tile-feast_of_the_winter_star_shop-name = Feast of the Winter Star Shop
+event_tile-egg_festival_shop-name = 달걀 축제 상점
+event_tile-flower_dance_shop-name = 봄꽃무도회 상점
+event_tile-soup_pot-name = 수프 냄비
+event_tile-spirits_eve_shop-name = 영령의 전야제 상점
+event_tile-stardew_valley_fair_shop-name = 스타듀벨리 품평회 상점
+event_tile-slingshot_game-name = 새총 미니 게임
+event_tile-purchase_star_tokens-name = 스타코인 구매
+event_tile-the_wheel-name = 돌림판
+event_tile-fishing_challenge-name = 낚시 미니게임
+event_tile-fortune_teller-name = 점쟁이 부스
+event_tile-grange_display-name = 농가 전시
+event_tile-strength_game-name = 바위 내려치기
+event_tile-free_burgers-name = 무료 햄버거
+event_tile-feast_of_the_winter_star_shop-name = 겨율 별의 만찬 상점
 
-patch-trash_bear-wanted_item = {$trash_bear_name} wants {$item_name}!
+patch-trash_bear-wanted_item = {$trash_bear_name}는 {$item_name}을 갖고 싶어합니다!
 
 # Terrain Utils
 
 terrain_util-forage_crop_types = {$type ->
-    [1] Spring onion
-    [2] Ginger
-    *[other] Forageable crop
+    [1] 봄양파
+    [2] 생강
+    *[other] 수확가능한 작물
   }
 terrain_util-fruit_tree_growth_stage = {$stage ->
-    [0] seed
-    [1] sprout
-    [2] sapling
-    [3] bush
-    *[other] tree
+    [0] 씨앗
+    [1] 새싹
+    [2] 묘목
+    [3] 관목
+    *[other] 나무
   }
 terrain_util-tree_type = {$type ->
-    [1] Oak
-    [2] Maple
-    [3] Pine
-    [4] Oak
-    [5] Maple
-    [6] Palm
-    [7] Mushroom
-    [8] Mahogany
-    [9] Palm
-    [10] Bushy Green
-    [11] Leafy Green
-    [12] Fern Green
-    [13] Mystic
-    *[other] Unknown tree type number {$type}
+    [1] 오크
+    [2] 단풍
+    [3] 소
+    [4] 오크
+    [5] 단풍
+    [6] 야자
+    [7] 버섯
+    [8] 마호가니
+    [9] 야자
+    [10] 수북한 녹색
+    [11] 잎이 무성한 녹색
+    [12] 청나래 고사리
+    [13] 신비한
+    *[other] 알 수 없는 나무, 번호 {$type}번
   }
-terrain_util-tree-seedling = seedling
-terrain_util-tree-stump = Stump
-terrain_util-tree-mossy = Mossy
+terrain_util-tree-seedling = 모종 씨앗
+terrain_util-tree-stump = 그루터기
+terrain_util-tree-mossy = 이끼 낀
 terrain_util-tree_growth_stage = {$stage ->
-    [1] sprout
-    [2] sapling
-    [3] bush
-    [4] bush
-    *[other] tree
+    [1] 새싹
+    [2] 묘목
+    [3] 관목 1단계
+    [4] 관목 2단계
+    *[other] 나무
   }
 terrain_util-bush_type = {$type ->
-    [0] Small
-    [1] Medium
-    [2] Large
-    [3] Tea {$has_matured ->
-      [0] Sapling
-      *[1] Bush
+    [0] 작은
+    [1] 중간
+    [2] 큰
+    [3] 차 {$has_matured ->
+      [0] 묘목
+      *[1] 관목
     }
-    [4] Golden Walnut 
-    *[other] unknown
+    [4] 황금 호두
+    *[other] 알 수 없음
   }
-terrain_util-bush = Bush
-terrain_util-bush-town = Town
-terrain_util-bush-greenhouse = Greenhouse
-terrain_util-tent = Tent
-terrain_util-tent_entrance = Tent Entrance
-terrain_util-crop-watered = Watered
-terrain_util-crop-unwatered = Unwatered
-terrain_util-crop-dead = Dead
-terrain_util-crop-soil = Soil
-terrain_util-harvestable = Harvestable
-terrain_util-fertilized = Fertilized
+terrain_util-bush = 관목
+terrain_util-bush-town = 마을
+terrain_util-bush-greenhouse = 온실
+terrain_util-tent = 텐트
+terrain_util-tent_entrance = 텐트 입구
+terrain_util-crop-watered = 물을 준
+terrain_util-crop-unwatered = 물을 안 준
+terrain_util-crop-dead = 죽음
+terrain_util-crop-soil = 흙
+terrain_util-harvestable = 수확 가능
+terrain_util-fertilized = 비료를 친
 
 
 # Object Categories
 
-object_category-animals = Animals
-object_category-bridges = Bridges
-object_category-buildings = Buildings
-object_category-bundles = Bundles
-object_category-bushes = Bushes
-object_category-containers = Containers
-object_category-crops = Crops
-object_category-debris = Debris
-object_category-decor = Decor
-object_category-doors = Doors
-object_category-dropped_items = Dropped items
-object_category-farmers = Farmers
-object_category-fishing = Fishing
-object_category-fishponds = Fish Ponds
-object_category-flooring = Flooring
-object_category-furniture = Furniture
-object_category-interactables = Interactables
-object_category-machines = Machines
-object_category-mine_items = Mine items
-object_category-npcs = NPC's
-object_category-pending = Pending
-object_category-quest_items = Quest items
-object_category-ready = Ready
-object_category-resource_clumps = Resource clumps
-object_category-trees = Trees
-object_category-water = Water
-object_category-unknown = Unknown
-object_category-other = Other
+object_category-animals = 동물
+object_category-bridges = 다리
+object_category-buildings = 건물
+object_category-bundles = 번 들
+object_category-bushes = 관목
+object_category-containers = 컨테이너
+object_category-crops = 농작물
+object_category-debris = 잔해
+object_category-decor = 장식물
+object_category-doors = 문
+object_category-dropped_items = 드랍된 아이템
+object_category-farmers = 농사
+object_category-fishing = 낚시
+object_category-fishponds = 물고기 연못
+object_category-flooring = 발판
+object_category-furniture = 가구
+object_category-interactables = 상호작용 가능
+object_category-machines = 기계
+object_category-mine_items = 광산 아이템
+object_category-npcs = NPC 소유물
+object_category-pending = 보류중
+object_category-quest_items = 퀘스트 아이템
+object_category-ready = 준비
+object_category-resource_clumps = 자원덩어리
+object_category-trees = 나무
+object_category-water = 물
+object_category-unknown = 알 수 없음
+object_category-other = 기타
 
-direction-north = North
-direction-south = South
-direction-east = East
-direction-west = West
-direction-north_west = Northwest
-direction-north_east = Northeast
-direction-south_west = Southwest
-direction-south_east = Southeast
-direction-current_tile = Current tile
+direction-north = 북쪽
+direction-south = 남쪽
+direction-east = 동쪽
+direction-west = 서쪽
+direction-north_west = 북서쪽
+direction-north_east = 북동쪽
+direction-south_west = 남서쪽
+direction-south_east = 동남쪽
+direction-current_tile = 현재 타일
 
-inventory_util-empty_slot = Empty Slot
+inventory_util-empty_slot = 빈 슬롯
 
-common-unknown = Unknown
+common-unknown = 알 수 없음
 
 # The $name will be in the respective language i.e., it will be in french for french translation and so on. So use the language specific name in the square brackets except for the one with '*', that can have any value. Variants with '*' are marked as default.
 common-util-pluralize_name = {$item_count} {PLURALIZE($item_count, $name)}

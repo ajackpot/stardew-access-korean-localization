@@ -10,7 +10,7 @@ common-ui-confirm_button = 확인 버튼
 common-ui-drop_item_button = 아이템 버리기 버튼
 common-ui-trashcan_button = 쓰래기통
 common-ui-organize_inventory_button = 인벤토리 정리 버튼
-common-ui-community_center_button = 마을회관 버튼
+common-ui-community_center_button = 마을 회관 버튼
 common-ui-scroll_up_button = 스크롤 위로 버튼
 common-ui-scroll_down_button = 스크롤 아래로 버튼
 common-ui-next_page_button = 다음 페이지 버튼
@@ -26,7 +26,7 @@ common-ui-equipment_slots = {$slot_name ->
     [shirt] 셔츠
     [pants] 바지
     *[other] {EMPTYSTRING()}
-  } slot{$is_empty ->
+  } 슬롯{$is_empty ->
     [0] : {$item_name}, {$item_description}
     *[1] {EMPTYSTRING()}
   }
@@ -34,18 +34,18 @@ common-ui-equipment_slots = {$slot_name ->
 ### 옵션 요소
 
 options_element-button_info = {$label} 버튼
-options_element-text_box_info = {$label} 텍스트필드 {$value ->
+options_element-text_box_info = {$label} 텍스트 필드 {$value ->
     [null] {EMPTYSTRING()}
     *[other] : {$value}
   }
 options_element-checkbox_info = {$is_checked ->
-    [0] 선택 안 함
-    *[1] 선택함
+    [0] 선택 안 됨
+    *[1] 선택됨
   } {$label} 체크박스
 options_element-dropdown_info = {$label} 콤보박스, {$selected_option} 옵션 선택됨
-options_element-slider_info = {$slider_value}% {$label} 슬라이더
+options_element-slider_info = {$label} {$slider_value}% 슬라이더
 options_element-plus_minus_button_info = {$label}, {$selected_option} 선택됨
-options_element-input_listener_info = {$label}은 {$buttons_list}에 지정됩니다. 마우스 왼쪽 버튼 클릭으로 변경하세요.
+options_element-input_listener_info = {$label}은 {$buttons_list}에 지정되었어요. 마우스 왼쪽 버튼 클릭으로 변경하세요.
 
 ## Custom 메뉴
 
@@ -53,33 +53,33 @@ options_element-input_listener_info = {$label}은 {$buttons_list}에 지정됩�
 
 menu-tile_info-mark_타일 = 이 타일 마크하기
 menu-tile_info-select_marking_index = 색인 번호 선택
-menu-tile_info-add_to_user_tiles_data = 이 타일을 유저 타일 데이터에 추가
+menu-tile_info-add_to_user_tiles_data = 이 타일을 사용자 타일 데이터에 추가
 menu-tile_info-detailed_tile_info = 타일 세부정보 읽기
-menu-tile_info-data_exists = 타일 데이터가 이미 있습니다,
-menu-tile_info-edit_existing_data = 수정하시겠습니까?
-menu-tile_info-delete_existing_data = 삭제하시겠습니까?
+menu-tile_info-data_exists = 타일 데이터가 이미 있어요,
+menu-tile_info-edit_existing_data = 수정할까요?
+menu-tile_info-delete_existing_data = 삭제할까요?
 
 ### 타일 Data Entry 메뉴
 
 menu-tile_data_entry-none = 없음
-menu-tile_data_entry-heading_label = 타일, X좌표 {$tile_x} Y좌표 {$tile_y}, 장소명:{$location_name}
+menu-tile_data_entry-heading_label = 타일, X좌표 {$tile_x}, Y좌표 {$tile_y}, 장소명: {$location_name}
 menu-tile_data_entry-tile_name_text_box_label = 타일 이름
-menu-tile_data_entry-tile_name_empty = 타일 이름을 비워둘 수 없습니다.
+menu-tile_data_entry-tile_name_empty = 타일 이름을 비워둘 수 없어요.
 menu-tile_data_entry-categories_drop_down_label = 분류
 menu-tile_data_entry-mod_dependency_drop_down_label = 모드 종속성
 menu-tile_data_entry-event_check_box_label = 현재 {$is_festival ->
     [0] {$is_wedding ->
         [0] 이벤트,
-        *[1] 웨딩,
+        *[1] 결혼식,
       }
     *[1] 축제: {$festival_name},
   } 아이디: {$event_id} 확인
 menu-tile_data_entry-farm_type_check_box_label = 현재 농장 유형 확인: {$farm_type}
-menu-tile_data_entry-farm_house_upgrade_level_drop_down_label = 농장 집 업그레이드 단계 확인하기
+menu-tile_data_entry-farm_house_upgrade_level_drop_down_label = 농가 업그레이드 단계 확인하기
 menu-tile_data_entry-quest_drop_down_label = 퀘스트가 있는지 확인하기
 menu-tile_data_entry-quest_drop_down-manual_entry_option = 퀘스트 아이디를 수동으로 입력하세요
 menu-tile_data_entry-manual_quest_id_text_box_label = 퀘스트 아이디
-menu-tile_data_entry-joja_member_checkbox_label = 플레이어가 조자 멤버인지 확인하기
+menu-tile_data_entry-joja_member_checkbox_label = 플레이어가 조자 회원인지 확인하기
 
 ## Bundle 메뉴
 
@@ -92,16 +92,16 @@ menu-bundle-completed-prefix = {$content} 완료
 menu-joja_cd-project_info = {$name}, 가격: {$price}골드, 설명: {$description}
 menu-joja_cd-project_name = {$project_index ->
     [0] 버스
-    [1] 광차
+    [1] 광산 카트
     [2] 다리
     [3] 온실
     [4] 패닝
-    *[other] 알 수 없음
+    *[other] 알 수 없는
   } 프로젝트
 
 ### 주니모 노트
 
-menu-junimo_note-scrambled_text = Scrambled text
+menu-junimo_note-scrambled_text = 뒤섞인 텍스트
 menu-junimo_note-current_area_info-prefix = 지역: {$area_name}, {$completion_reward}, 
 menu-junimo_note-bundle_open_button = {$bundle_name} 번들
 menu-junimo_note-input_slot = 입력 슬롯 {$index}
@@ -157,7 +157,7 @@ menu-inventory_page-money_info_key = {$farm_name}, {$current_funds}, {$total_ear
     [positive] , 치 보석: {$qi_gem_count}
     *[other] {EMPTYSTRING()}
   }{SIGNOFNUMBER($qi_club_coins) ->
-    [positive] , 치 클럽 코인: {$qi_club_coins}
+    [positive] , 치 코인: {$qi_club_coins}
     *[other] {EMPTYSTRING()}
   }
 
@@ -170,13 +170,13 @@ menu-social_page-npc_info = {$name}{$has_talked ->
   }{$relationship_status ->
     [null] {EMPTYSTRING()}
     *[other] , {$relationship_status}
-  }, {$heart_level} {$heart_level ->
-    [1]개의 하트
-    *[other]개의 하트
-  }, {$gifts_this_week} {$gifts_this_week ->
-    [1]개의 선물
-    *[other]개의 선물
-  }을 이번주에 줬습니다.
+  }, 하트 {$heart_level} {$heart_level ->
+    [1]개
+    *[other]개
+  }, 이번주에 선물 {$gifts_this_week} {$gifts_this_week ->
+    [1]개
+    *[other]개
+  } 줌.
 
 menu-social_page-player_info = {$name}{$relationship_status ->
     [null] {EMPTYSTRING()}
@@ -188,17 +188,17 @@ menu-collections_page-tabs = {$tab_name} 탭 {$is_selected ->
     [0] {EMPTYSTRING()}
     *[1] 선택됨
   }
-menu-collections_page-unachieved = 미달성한
+menu-collections_page-unachieved = 달성 안 한
 menu-collections_page-uncaught = 잡히지 않은
-menu-collections_page-uncooked = 요리되지 않은
+menu-collections_page-uncooked = 요리하지 않은
 menu-collections_page-unfound = 찾지 못한
-menu-collections_page-unshipped = 미발송된
+menu-collections_page-unshipped = 발송 안 한
 
 ### 제작 페이지
 
 menu-crafting_page-recipe_info = {$produce_count} {$name}, {$is_craftable ->
     [0] 제작 불가능
-    *[1] 제작할 수 있음
+    *[1] 제작 가능
   }, 재료: {$ingredients}, 설명: {$description}, {$buffs}
 menu-crafting_page-unknown_recipe = 알 수 없는 레시피
 menu-crafting_page-previous_recipe_list_button = 이전 레시피 목록 버튼
@@ -221,13 +221,13 @@ menu-skills_page-player_info = {$name}, {$title}{$golden_walnut_count ->
     *[other] , 치 보석 {$qi_gem_count}개
   }{$house_upgrade_level ->
     [1] {EMPTYSTRING()}
-    [2] , 집이 두번째 단계로 업그레이드됐습니다.
-    [3] , 집이 세번째 단계로 업그레이드됐습니다.
-    [4] , 집이 네번째 단계로 업그레이드됐습니다.
-    *[other] , 집이 {$house_upgrade_level}단계로 업그레이드됐습니다.
+    [2] , 집 업그레이드 수준 2단계
+    [3] , 집 업그레이드 수준 3단계
+    [4] , 집 업그레이드 수준 4단계
+    *[other] , 집 업그레이드 수준 {$house_upgrade_level}단계
   }{$lowest_mine_level ->
     [0] {EMPTYSTRING()}
-    *[other] , 광산에서 가장 깊이 내려간 층 수: {$lowest_mine_level}
+    *[other] , 광산에서 지하 {$lowest_mine_level}층까지 내려감
   }{$stardrop_count ->
     [0] {EMPTYSTRING()}
     [1] , 별방울 1개
@@ -250,57 +250,56 @@ menu-animal_page-animal_info = {$name}, {$type}{$heart_count ->
     *[other] {EMPTYSTRING()}
   }{$has_received_animal_cracker ->
     [0] {EMPTYSTRING()}
-    *[other], 먹은 동물 크래커
+    *[other], 동물 크래커 먹음
   }
 
 ## 인벤토리 메뉴
 
 ### 재련 메뉴
 
-menu-forge-start_forging_button = 재련 버튼
-menu-forge-unforge_button = 재련 해제 버튼
+menu-forge-start_forging_button = 재련 시작 버튼
+menu-forge-unforge_button = 재련 제거 버튼
 menu-forge-weapon_input_slot = {$is_empty ->
     [0] 무기 슬롯: {$item_name}
-    *[1] 무기나 도구, 반지를 여기 놓으세요.
+    *[1] 무기, 도구, 반지를 여기 놓으세요.
   }
 menu-forge-gemstone_input_slot = {$is_empty ->
-    [0] 잼스톤: {$item_name}
-    *[1] 잼스톤이나 반지를 여기 놓으세요.
+    [0] 보석: {$item_name}
+    *[1] 보석이나 반지를 여기 놓으세요.
   }
 
 ### 정동석 메뉴
 
-menu-geode-geode_input_slot = 정동성을 여기 놓으세요.
-menu-geode-received_treasure_info = {$treasure_name}를 받았습니다
+menu-geode-geode_input_slot = 정동석을 여기 놓으세요.
+menu-geode-received_treasure_info = {$treasure_name}를 받았어요
 
 ### 아이템 잡기 메뉴
 
 menu-item_grab-last_shipped_info = 마지막 배송: {$shipped_item_name}
-menu-item_grab-add_to_existing_stack_button = 기존 쌓인 아이템에 추가 버튼
+menu-item_grab-add_to_existing_stack_button = 기존 아이템 모음에 추가 버튼
 menu-item_grab-special_button = 스페셜 버튼
 menu-item_grab-color_picker_button = 색상 선택기: {$is_enabled ->
     [0] 끔
     *[1] 켬
   }
-menu-item_grab-chest_colors =
-  {$index ->
-   [0] 상자 색상: 갈색 (기본)
-   [1] 파랑
-   [2] 연한 파랑
+menu-item_grab-chest_colors = 상자 색상: {$index ->
+   [0] 갈색 (기본)
+   [1] 파란색
+   [2] 연한 파란색
    [3] 틸
    [4] 아쿠아
-   [5] 초록
-   [6] 라임 초록
-   [7] 노랑
-   [8] 연한 주황
-   [9] 주황
-   [10] 빨강
-   [11] 어두운 빨강
-   [12] 밝은 분홍
-   [13] 분홍
+   [5] 초록색
+   [6] 라임색
+   [7] 노란색
+   [8] 연한 주황색
+   [9] 주황색
+   [10] 빨간색
+   [11] 어두운 빨간색
+   [12] 연분홍색
+   [13] 분홍색
    [14] 마젠타
-   [15] 보라
-   [16] 어두운 보라
+   [15] 보라색
+   [16] 어두운 보라색
    [17] 어두운 회색
    [18] 회색
    [19] 연한 회색
@@ -321,7 +320,7 @@ menu-shop-pet_license-suffix = {$content} 면허증
 
 menu-tailoring-start_tailoring_button = 재단 시작 버튼
 menu-tailoring-cloth_input_slot = {$is_empty ->
-    [0] Cloth slot: {$item_name}
+    [0] 옷감 슬롯: {$item_name}
     *[1] 옷감이나 염색 가능한 옷을 여기 놓으세요.
   }
 menu-tailoring-spool_slot = {$is_empty ->
@@ -349,24 +348,23 @@ menu-animal_query-animal_info =
   }, {$heart_count ->
     [1] 하트 1개
     *[other] 하트 {$heart_count}개
-  }, {$age ->
+  }, 나이 {$age ->
     [1] 1개월
     *[other] {$age}개월
-  } 늙은 {$parent_name ->
+  }, {$parent_name ->
     [null] {EMPTYSTRING()}
-    *[other] , 부모: {$parent_name}.
+    *[other] 부모: {$parent_name}.
   }, {$mood}{$has_received_animal_cracker ->
     [0] {EMPTYSTRING()}
-    *[other], 먹은 동물 크래커
+    *[other], 동물 크래커 먹음
   }
 menu-animal_query-confirm_selling_button = 동물 판매 확인 버튼
 menu-animal_query-cancel_selling_button = 동물 판매 취소 버튼
 menu-animal_query-selling_button = {$price}골드에 판매 버튼
 menu-animal_query-move_home_button = 집 건물 변경 버튼
-menu-animal_query-text_box = Animal 이름 텍스트필드 
-menu-animal_query-allow_reproduction_button =
-  {$checkbox_value ->
-    [0] 누르지 않음
+menu-animal_query-text_box = 동물 이름 텍스트 필드 
+menu-animal_query-allow_reproduction_button = {$checkbox_value ->
+    [0] 눌리지 않음
     *[1] 눌림
   } 임신 허용 버튼
 
@@ -384,13 +382,13 @@ menu-building_skin-skin_info = {$type ->
         [4] {$id}
         [5] {$id}
         [6] {$id}
-        *[other] 알 수 없는 오두막집 스킨, 어이디:{$id}, 색인 번호:{$index}
+        *[other] 알 수 없는 오두막집 스킨, 아이디: {$id}, 색인 번호: {$index}
       }
     [pet_bowl] {$index ->
         [0] 기본 애완동물 그릇
         [1] {$id}
         [2] {$id}
-        *[other] 알 수 없는 애완동물 그릇, 아이디:{$id}, 색인 번호:{$index}
+        *[other] 알 수 없는 애완동물 그릇, 아이디: {$id}, 색인 번호: {$index}
       }
     *[other] {$index}: {$id}
   }
@@ -401,20 +399,20 @@ menu-building_skin-previous_skin_button = 이전 스킨
 
 menu-carpenter-blueprint_info = {$name}, 가격: {$price}골드, 재료: {$ingredients_list}, {$days ->
     [0] 즉시 건설
-    [1] 하루에 걸쳐 짓기
-    *[other] {$days}일에 걸쳐 짓기
+    [1] 하루동안 건설
+    *[other] {$days}일에 걸쳐 건설
   }, Dimensions: 넓이 {$width}, 높이 {$height}, 설명: {$description}
-menu-carpenter-previous_blueprint_button = 이전 설계도면
-menu-carpenter-next_blueprint_button = 다음 설계도면
+menu-carpenter-previous_blueprint_button = 이전 청사진
+menu-carpenter-next_blueprint_button = 다음 청사진
 menu-carpenter-move_building_button = 건물 옮기기
 menu-carpenter-paint_building_button = 건물 도색하기
 menu-carpenter-appearance_button = 외관 변경하기
-menu-carpenter-demolish_building_button = 건물 철거 {$can_demolish ->
-    [0] , 철거할 수 없음
+menu-carpenter-demolish_building_button = 건물 철거{$can_demolish ->
+    [0] , 사용할 수 없음
     *[1] {EMPTYSTRING()}
   }
-menu-carpenter-construct_building_button = 건물 공사{$can_construct ->
-    [0] , 건물을 공사할 수 없음
+menu-carpenter-construct_building_button = 건설{$can_construct ->
+    [0] , 사용할 수 없음
     *[1] {EMPTYSTRING()}
   }
 
@@ -422,19 +420,19 @@ menu-carpenter-construct_building_button = 건물 공사{$can_construct ->
 
 menu-choose_from_icons-bobber_styles = {$bobber_id ->
     [locked] 잠김
-    [id_1] 빨강
-    [id_2] 파랑
-    [id_3] 초록
-    [id_4] 노랑
-    [id_5] 빨강과 파랑
-    [id_6] 초록과 노랑
-    [id_7] 분홍 공
-    [id_8] 빵글이
+    [id_1] 빨간색
+    [id_2] 파란색
+    [id_3] 초록색
+    [id_4] 노란색
+    [id_5] 빨간색과 파란색
+    [id_6] 초록색과 노란색
+    [id_7] 분홍색 공
+    [id_8] 미소 지음
     [id_9] 해골바가지
     [id_10] 오리
     [id_11] 개
-    [id_12] 연한 파랑 공
-    [id_13] 지점토
+    [id_12] 연한 파란색 공
+    [id_13] 점토
     [id_14] 수액
     [id_15] 주니모
     [id_16] 고양이
@@ -442,7 +440,7 @@ menu-choose_from_icons-bobber_styles = {$bobber_id ->
     [id_18] 조자 콜라
     [id_19] 곰?
     [id_20] 갈고리
-    [id_21] 분홍 고양이
+    [id_21] 분홍색 고양이
     [id_22] 프리깃
     [id_23] 젤리 불가사리
     [id_24] 부츠 한짝
@@ -450,12 +448,12 @@ menu-choose_from_icons-bobber_styles = {$bobber_id ->
     [id_26] 연꽃
     [id_27] 야구공
     [id_28] 햄버거
-    [id_29] 연한 파랑과 보라색
+    [id_29] 연한 파란색과 보라색
     [id_30] 초록색 오브??
-    [id_31] 노란 케이크??
+    [id_31] 노란색 케이크??
     [id_32] 빨간 눈 먼지 정령?
     [id_33] 에메랄드
-    [id_34] 초록 화염구
+    [id_34] 초록색 화염구
     [id_35] 눈덩이
     [id_36] 수정
     [id_37] 염소? 소?
@@ -469,7 +467,7 @@ menu-choose_from_icons-bobber_styles = {$bobber_id ->
 
 ### 목록에서 선택 메뉴
 
-menu-choose_from_list-ok_button = 선택, {$option} 버튼
+menu-choose_from_list-ok_button = {$option} 선택 버튼
 menu-choose_from_list-previous_button = 이전 옵션: {$option} 버튼
 menu-choose_from_list-next_button = 다음 옵션: {$option} 버튼
 
@@ -489,14 +487,14 @@ menu-confirmation_dialogue-copy_button = {$dialogue_message}
 
 menu-item_list-ok_button = {$title}
   {$item_list}
-   {$total_pages} 페이지 중 {$current_page} 페이지
+   {$total_pages}페이지 중 {$current_page}페이지
   확인 버튼
 
 ### 낱말 보기 메뉴
 
 menu-letter_viewer-letter_message = {$message_content}{$is_money_included ->
     [0] {EMPTYSTRING()}
-    *[1] , {$received_money} 골드 받음
+    *[1] , {$received_money}골드 받음
   }{$learned_any_recipe ->
     [0] {EMPTYSTRING()}
     *[1] , {$learned_recipe}
@@ -508,19 +506,19 @@ menu-letter_viewer-pagination_text-prefix = {$total_pages}페이지 중 {$curren
   {$content}
 menu-letter_viewer-grabbable_item_text = 마우스 왼쪽 버튼 클릭으로 {$name} 수집
 menu-letter_viewer-image_note = {$note_id ->
-    [11] 어린 마니가 유아 자스와 손을 잡고 있는 모습. 그들은 목장의 농장 동물들에 둘러싸여 있습니다.
-    [16] 철로의 북서쪽에 있는 큰 바위를 묘사한 보물 지도입니다. 그 바위의 오른쪽에는 빨간색 X가 놓여 있습니다.
-    [17] 조자마트 북쪽 강가를 그린 보물지도(북동쪽 모서리에 빨간색 X 표시)
-    [18] 남서쪽으로 빨간색 X가 그려져 있는 칼리코 사막의 남동쪽 구석에 있는 벤치를 묘사한 보물 지도.
-    [19] 일련의 화살표로 버드나무 1길을 묘사합니다. 사각형은 현관문 앞의 공간을 표시합니다. 순서는 왼쪽, 위, 오른쪽, 위, 오른쪽, 아래, 왼쪽, 아래, 체크 표시로 읽습니다.
-    [20] 일련의 화살표로 마을 광장을 묘사합니다. 광장의 바로 중앙에 있는 한 지역에 주목합니다. 순서는 다음과 같습니다, 오른쪽, 아래, 오른쪽, 오른쪽, 오른쪽, 오른쪽, 왼쪽, 왼쪽, 오른쪽, 오른쪽, 오른쪽, 왼쪽, 오른쪽, 왼쪽, 체크 표시.
-    [21] 밤에 다리의 북서쪽에서 해변으로 가는 큰 덤불 묘사. 시계는 시간을 12시 40분으로 표시합니다.
-    *[other] 설명되지 않은 이미지, {$note_id}
+    [11] 어린 마니가 유아 제스와 손을 잡고 있는 모습입니다. 그들은 목장의 농장 동물들에 둘러싸여 있습니다.
+    [16] 철로의 북서쪽에 있는 큰 바위를 묘사한 보물 지도입니다. 바위의 오른쪽에는 빨간색 X가 표시되어 있습니다.
+    [17] 조자 마트 북쪽 강가를 그린 보물 지도입니다. 북동쪽 모서리에 빨간색 X가 표시되어 있습니다.
+    [18] 칼리코 사막의 남동쪽 구석에 있는 벤치를 묘사한 보물 지도입니다. 남서쪽에 빨간색 X가 표시되어 있습니다.
+    [19] 일련의 화살표로 버드나무 1길을 묘사합니다. 사각형은 현관문 앞의 공간을 표시합니다. 왼쪽, 위, 오른쪽, 위, 오른쪽, 아래, 왼쪽, 아래, 왼쪽, 아래, 체크 표시 순으로 읽습니다.
+    [20] 일련의 화살표로 마을 광장을 묘사합니다. 광장의 바로 중앙에 있는 한 지역에 주목합니다. 오른쪽, 아래, 오른쪽, 위, 오른쪽, 위, 오른쪽, 아래, 왼쪽, 위, 왼쪽, 위, 오른쪽, 위, 왼쪽, 위, 왼쪽, 체크 표시 순으로 읽습니다.
+    [21] 밤에 다리의 북서쪽에서 해변으로 가는 큰 덤불 묘사입니다. 시계는 12시 40분을 가리킵니다.
+    *[other] 설명이 없는 이미지, {$note_id}
   }
 
 ### 레벨업 메뉴
 
-menu-level_up-profession_chooser_heading = {$title}. 새로운 직업 특성 선택
+menu-level_up-profession_chooser_heading = {$title}. 새로운 직업 스킬 선택
 menu-level_up-profession_chooser_button = 선택됨: {$profession_description_list}
   왼쪽 버튼 클릭으로 선택
 menu-level_up-ok_button = {$title}, {$extra_info}, 배운 레시피: {$learned_recipes}, 마우스 왼쪽 버튼 클릭으로 닫기.
@@ -534,7 +532,7 @@ menu-mastery-pedestial_info = {$final_path_text}, {$required_points} 포인트 �
   }
 menu-mastery-walls-claim_button = {$name},
   {$rewards},
-  수령 버튼
+  받기 버튼
 
 ### Naming 메뉴
 
@@ -563,26 +561,26 @@ menu-prize_ticket-collect_prize_button = 현재 경품: {$prize_items}
   {$prize_ticket_count ->
     [1] 경품 티켓 한 장
     *[other] 경품 티켓 {$prize_ticket_count}장
-  }울 가지고 있습니다, 경품 받기 버튼
+  }을 가지고 있습니다, 경품 받기 버튼
 
 ### 동물 구매 메뉴
 
 menu-purchase_animal-animal_info = {$name}, 가격: {$price}골드, 설명: {$description}
-menu-purchase_animal-first_time_in_menu_info = 이름을 이름 텍스트필드 에 입력해주세요.
+menu-purchase_animal-first_time_in_menu_info = 이름을 이름 텍스트 필드에 입력해주세요.
 menu-purchase_animal-random_name_button = 무작위 이름 버튼
-menu-purchase_animal-animal_name_text_box = 이름 텍스트필드 {$value ->
+menu-purchase_animal-animal_name_text_box = 이름 텍스트 필드 {$value ->
     [null] {EMPTYSTRING()}
     *[other] , 값: {$value}
   }
 
 ### 제목 텍스트 입력 메뉴
 
-menu-title_text_input-paste_button = 복사 버튼
+menu-title_text_input-paste_button = 붙여넣기 버튼
 
 ### 배송 메뉴
 
 menu-shipping-total_money_received_info = 총 {$money}골드 받음. 마우스 왼쪽 버튼 클릭으로 저장.
-menu-shipping-money_received_from_category_info = {$category_name}로 {$money}골드를 받음.
+menu-shipping-money_received_from_category_info = {$category_name}에서 {$money}골드를 받았어요.
 
 ## 퀘스트 페치
 
@@ -591,8 +589,8 @@ menu-shipping-money_received_from_category_info = {$category_name}로 {$money}�
 menu-billboard-calendar-day_info = {$is_current ->
     [0] {EMPTYSTRING()}
     *[1] 현재
-  } Day {$day ->
-    [1] {$day}일, {$year}년째 {$season}
+  } 날짜 {$day ->
+    [1] {$year}년 {$season} {$day}일
     *[other] {$day}일
   }{$extra_info ->
     [null] {EMPTYSTRING()}
@@ -604,10 +602,10 @@ menu-billboard-daily_quest-accept_quest-suffix =
 ### Quest Log 메뉴 (Journal 메뉴)
 
 menu-quest_log-cancel_quest_button = 퀘스트 취소 버튼
-menu-quest_log-reward_button = 보상 수령 버튼
+menu-quest_log-reward_button = 보상 받기 버튼
 menu-quest_log-quest_brief = {$name} {$is_completed ->
     [0] {SIGNOFNUMBER($days_left) ->
-      [positive] , {$days_left} {$days_left ->
+      [positive] , {$days_left}{$days_left ->
         [1]일
         *[other]일
       } 남음
@@ -617,7 +615,7 @@ menu-quest_log-quest_brief = {$name} {$is_completed ->
   }
 menu-quest_log-quest_detail = {$name} {$is_completed ->
     [0] , 설명: {$description}, 목표: {$objectives_list} {SIGNOFNUMBER($days_left) ->
-      [positive] , {$days_left} {$days_left ->
+      [positive] , {$days_left}{$days_left ->
         [1]일
         *[other]일
       } 남음
@@ -633,7 +631,7 @@ menu-quest_log-quest_detail = {$name} {$is_completed ->
 
 menu-special_orders_board-quest_details = {$name}, 설명: {$description}, 목표: {$objectives_list}{$is_timed ->
     [0] {EMPTYSTRING()}
-    *[1] , 시간: {$days} {$days ->
+    *[1] , 시간: {$days}{$days ->
       [1]일
       *[other]일
     }
@@ -647,7 +645,7 @@ menu-special_orders_board-accept_button = {$is_left_quest ->
   } 의뢰: {$quest_details}
   마우스 왼쪽 버튼 클릭으로 퀘스트 수락.
 menu-special_orders_board-quest_in_progress = 진행 중: {$quest_details}
-menu-special_orders_board-quest_completed = {$name} 퀘스트 완료! 퀘스트 일지을 열어 보상 수령.
+menu-special_orders_board-quest_completed = {$name} 퀘스트 완료! 퀘스트 일지을 열어 보상을 받으세요.
 
 ## 타이틀 메뉴
 
@@ -657,7 +655,7 @@ menu-title-stardew_access_loaded = 스타듀 엑세스 버전: {$version}, {$che
     [1] 치트 활성화됨
     *[0] {EMPTYSTRING()}
   }
-menu-title-click_to_skip = 마우스 왼쪽 버튼 클릭으로 타이틀 화면 스킵
+menu-title-click_to_skip = 마우스 왼쪽 버튼 클릭으로 타이틀 화면 건너뛰기
 menu-title-new_game_button = 새 게임 버튼
 menu-title-load_button = 불러오기 버튼
 menu-title-co_op_button = 협동플레이 버튼
@@ -681,7 +679,7 @@ menu-load_game-farm_details = {$index ->
   } {$farm_name} 농장, {$farmer_name}, {$money ->
     [-1] {EMPTYSTRING()}
     *[other] {$money}골드
-  }, {$date}, {$hours_played} 시간 플레이함
+  }, {$date}, {$hours_played}시간 플레이함
 
 ### 협동 플레이 메뉴
 

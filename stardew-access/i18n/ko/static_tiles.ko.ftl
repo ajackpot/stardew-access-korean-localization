@@ -1,17 +1,17 @@
 # Common
 
 static_tile-common-hay_hopper = 사료 호퍼
-static_tile-common-shop_counter = 계산
-static_tile-common-minecart = 광차
-static_tile-common-stool = 스툴 의자
+static_tile-common-shop_counter = 카운터
+static_tile-common-minecart = 광산 카트
+static_tile-common-stool = 스툴
 static_tile-common-fridge = 냉장고
 static_tile-common-oven = 오븐
 static_tile-common-bench = 벤치
-static_tile-common-bookshelf = 서가
-static_tile-common-dark_pool = 어두운 연못
+static_tile-common-bookshelf = 책장
+static_tile-common-dark_pool = 어두운 수영장
 static_tile-common-pond = 연못
-static_tile-common-lake = 강
-static_tile-common-river = 호수
+static_tile-common-lake = 호수
+static_tile-common-river = 강
 static_tile-common-waterfall = 폭포
 
 # NPCs
@@ -38,11 +38,11 @@ static_tile-npc-camel = 낙타
 
 ## Island Farm Cave
 
-static_tile-npc-gourmand_frog = 미식가 개구리
+static_tile-npc-gourmand_frog = 대식가 개구리
 
 ## Movie Theater
 
-static_tile-npc-crane_man = 크레인 게임 기계
+static_tile-npc-crane_man = 인형 뽑기 맨
 
 ## Submarine
 
@@ -58,27 +58,27 @@ static_tile-adventure_guild-house_plant = 실내화분
 # Animals Shop
 
 static_tile-animal_shop-marnies_room_door = 마니의 방
-static_tile-animal_shop-jass_room_door = 자스의 방
+static_tile-animal_shop-jass_room_door = 제스의 방
 static_tile-animal_shop-shanes_room_door = 셰인의 방
-static_tile-animal_shop-marnies_barn_door = 마니의 곳간
+static_tile-animal_shop-marnies_barn_door = 마니의 헛간
 static_tile-animal_shop-mega_station = 메가 스테이션
 static_tile-animal_shop-shanes_radio = 셰인의 라디오
 static_tile-animal_shop-marnies_dresser = 마니의 옷장
-static_tile-animal_shop-marnies_drawer = 마니의 서랍장
+static_tile-animal_shop-marnies_drawer = 마니의 서랍
 static_tile-animal_shop-jack_in_the_box = 잭 인더 박스
 static_tile-animal_shop-futan_bear = 후탄 곰
 static_tile-animal_shop-colouring_book = 컬러링 북
 static_tile-animal_shop-paint_set = 물감 세트
-static_tile-animal_shop-jass_alarm_clock = 자스의 알람 시계
-static_tile-animal_shop-jass_radio = 자스의 라디오
+static_tile-animal_shop-jass_alarm_clock = 제스의 알람 시계
+static_tile-animal_shop-jass_radio = 제스의 라디오
 static_tile-animal_shop-arts_and_craft = 미술과 공예
 static_tile-animal_shop-doll_house = 인형집
 
 # Archeology House
 
-static_tile-archaeology_house-gunthers_box = 군터의 상자
+static_tile-archaeology_house-gunthers_box = 건터의 상자
 static_tile-archaeology_house-collection = 모음집
-static_tile-archaeology_house-counter = 계산대
+static_tile-archaeology_house-counter = 카운터
 static_tile-archaeology_house-chair = 의자
 static_tile-archaeology_house-table = 탁자
 static_tile-archaeology_house-desk = 책상
@@ -86,7 +86,7 @@ static_tile-archaeology_house-house_plant = 실내화분
 static_tile-archaeology_house-palm_tree = 야자수
 static_tile-archaeology_house-fireplace = 벽난로
 static_tile-archaeology_house-history_book = 역사책
-static_tile-archaeology_house-step_stool = 발판
+static_tile-archaeology_house-step_stool = 스텝 스툴
 static_tile-archaeology_house-teddybear = 테디베어
 static_tile-archaeology_house-atlas = 아틀라스
 static_tile-archaeology_house-childrens_book = 아이의 책
@@ -100,7 +100,7 @@ static_tile-bathhouse_pool-mens_locker_room_door = 남자 탈의실
 static_tile-bathhouse_pool-northwest_steps = 북서쪽 계단
 static_tile-bathhouse_pool-northeast_steps = 북동쪽 계단
 static_tile-bathhouse_pool-southwest_steps = 남서쪽 계단
-static_tile-bathhouse_pool-southeast_steps = 동남쪽 계단
+static_tile-bathhouse_pool-southeast_steps = 남동쪽 계단
 
 # Beach
 
@@ -115,8 +115,8 @@ static_tile-beach_night_market-fishing_submarine_door = 낚시 잠수함
 static_tile-beach_night_market-mermaid_boat_door = 인어 보트
 static_tile-beach_night_market-famous_painter_lupini = 유명한 화가 루피니
 static_tile-beach_night_market-shrouded_figure = 신비로운 사람
-static_tile-beach_night_market-decoration_boat = 장식용 보트
-static_tile-beach_night_market-magic_shop_boat = 마법 상점 보트
+static_tile-beach_night_market-decoration_boat = 장식물 보트
+static_tile-beach_night_market-magic_shop_boat = 마법 ##	상점 보트
 
 # Blacksmith
 
@@ -129,7 +129,7 @@ static_tile-blacksmith-clints_drawer = 클린트의 서랍
 
 # Bus stop
 
-static_tile-bus_stop-ticket_machine = 티켓 발매기
+static_tile-bus_stop-ticket_machine = 표 발매기
 
 # Caldera
 
@@ -138,26 +138,26 @@ static_tile-caldera-forge = 대장간
 
 # Casino (Qi의 club)
 
-static_tile-club-coin_machine = 동전 환전기
+static_tile-club-coin_machine = 코인 환전기
 static_tile-club-calico_spin_machine = 칼리코 스핀 기계
-static_tile-club-high_stakes_calico_jack_table = 판돈이 높은 칼리코 잭 탁자
-static_tile-club-low_stakes_calico_jack_table = 판돈이 낮은 칼리코 잭 탁자
+static_tile-club-high_stakes_calico_jack_table = 판돈이 높은 칼리코 잭 테이블
+static_tile-club-low_stakes_calico_jack_table = 판돈이 낮은 칼리코 잭 테이블
 static_tile-club-stats_checker = 통계 조회기
 
 # Desert
 
 static_tile-desert-bus = 버스
-static_tile-desert-three_pillars = 세 기둥
-static_tile-desert-three_pillars_center = 세 기둥 중앙
+static_tile-desert-three_pillars = 세개의 기둥
+static_tile-desert-three_pillars_center = 세개의 기둥 중앙
 static_tile-desert-desert_warp_statue = 사막 워프 조각상
-static_tile-desert-sand_dragon_skull = 모래 드래곤 머리뼈
+static_tile-desert-sand_dragon_skull = 모래 드래곤 뼈
 
 # Elliott House
 
-static_tile-elliott_house-piano_key_1 = 파아노 건반 1
-static_tile-elliott_house-piano_key_2 = 파아노 건반 2
-static_tile-elliott_house-piano_key_3 = 파아노 건반 3
-static_tile-elliott_house-piano_key_4 = 파아노 건반 4
+static_tile-elliott_house-piano_key_1 = 피아노 건반 1
+static_tile-elliott_house-piano_key_2 = 피아노 건반 2
+static_tile-elliott_house-piano_key_3 = 피아노 건반 3
+static_tile-elliott_house-piano_key_4 = 피아노 건반 4
 
 # Farm
 
@@ -165,11 +165,11 @@ static_tile-farm-lumber_pile = 목재더미
 
 # FarmHouse
 
-static_tile-farmhouse-cellar_door = 지하실 문
+static_tile-farmhouse-cellar_door = 지하실
 
 # FishShop
 
-static_tile-fishshop-bobber_machine = 낚시찌 스타일 기계
+static_tile-fishshop-bobber_machine = 낚시찌 기계
 static_tile-fishshop-miniature_frigate = 미니어쳐 프리깃
 static_tile-fishshop-tackle_box = 낚시 도구 상자
 
@@ -180,19 +180,19 @@ static_tile-forest-bridge_2 = 다리 2
 static_tile-forest-bridge_3 = 다리 3
 static_tile-forest-bridge_4 = 다리 4
 static_tile-forest-bridge_5 = 다리 5
-static_tile-forest-abandoned_house = 버려진 집
+static_tile-forest-abandoned_house = 폐가
 static_tile-forest-sewage_pipe = 하수도
 
 static_tile-forest-mastery_cave_door = 마스터리 동굴
 
 # Greenhouse
 
-static_tile-greenhouse-water_trough = 물통
+static_tile-greenhouse-water_trough = 여물통
 
 # 2 Willow Lane (home of sisters Emily and Haley)
 
 static_tile-haley_house-sewing_machine = 재봉틀
-static_tile-haley_house-dye_pots = 염색용 냄비
+static_tile-haley_house-dye_pots = 염료통
 static_tile-haley_house-emilys_room_door = 에밀리의 방
 static_tile-haley_house-emilys_computer = 에밀리의 컴퓨터
 static_tile-haley_house-emilys_pet_parrot = 에밀리의 애완 앵무새
@@ -201,18 +201,18 @@ static_tile-haley_house-globe = 지구본
 static_tile-haley_house-haleys_room_door = 헤일리의 방
 static_tile-haley_house-futan_bear = 후탄 곰
 static_tile-haley_house-diary = 수첩
-static_tile-haley_house-haleys_camera = 헤일리의 카메라
+static_tile-haley_house-haleys_camera = 헤일리의 사진기
 
 # Harvey의 방
 
-static_tile-harvey_room-airplane_collection = 항공기 모음
+static_tile-harvey_room-airplane_collection = 항공기 모형 모음
 static_tile-harvey_room-radio_broadcasting_set = 라디오 방송 세트
 static_tile-harvey_room-cassette_deck = 카세트 데크
 
 # Harvey의 clinic
 
-static_tile-hospital-harveys_room_entrance_door = 하비의 방 문
-static_tile-hospital-main_area_door = 병원 주 구역 문
+static_tile-hospital-harveys_room_entrance_door = 하비의 방 입구
+static_tile-hospital-main_area_door = 병원 주 구역
 
 # Ginger Island
 
@@ -223,7 +223,7 @@ static_tile-island_east-jungle_parrot_express = 정글 앵무세 익스프레스
 
 ## Island Field Office
 
-static_tile-island_field_office-counter = 계산대
+static_tile-island_field_office-counter = 카운터
 static_tile-island_field_office-island_survey = 섬 측량 조사
 
 ## Island North
@@ -280,7 +280,7 @@ static_tile-volcanodungeon5-dwarf_shop = 드워프 상점
 # Joja Mart
 
 static_tile-jojamart-morriss_kiosk = 모리스의 키오스크
-static_tile-jojamart-salt = Salt
+static_tile-jojamart-salt = 소금
 static_tile-jojamart-multipurpose_sauce = 다용도 소스
 static_tile-jojamart-marinara_sauce = 마리네라 소스
 static_tile-jojamart-pesto = 페스토
@@ -290,7 +290,7 @@ static_tile-jojamart-cowboy_sauce = 카우보이 소스
 static_tile-jojamart-hoisin_sauce = 해선장 소스
 static_tile-jojamart-pretzel_snacks = 프레첼
 static_tile-jojamart-honey_sauce = 허니 소스
-static_tile-jojamart-yeast = Yeast
+static_tile-jojamart-yeast = 누룩
 static_tile-jojamart-sugar_cones = 슈가콘
 static_tile-jojamart-sugar_stars = 슈가스타
 static_tile-jojamart-gummies = 구미젤리
@@ -300,7 +300,7 @@ static_tile-jojamart-low_fat_beans = 저지방 콩
 static_tile-jojamart-white_fungus_soda = 흰곰팡이 소다
 static_tile-jojamart-powdered_breakfast = 아침대용 선식 파우더
 static_tile-jojamart-powdered_wine = 와인 파우더
-static_tile-jojamart-canned_scrambled_eggs = 다랼 스크램블 통조림
+static_tile-jojamart-canned_scrambled_eggs = 달걀 스크램블 통조림
 static_tile-jojamart-canned_fish = 생선 통조림
 static_tile-jojamart-canned_meals = 빵 통조림
 static_tile-jojamart-protein_bars = 담백질바
@@ -310,7 +310,7 @@ static_tile-jojamart-jitter_juice = 지터 쥬스
 static_tile-jojamart-explosion_juice = 폭발 쥬스
 static_tile-jojamart-blue_alien_energy = 파란 외계인 에너지 드링크
 static_tile-jojamart-hyper_juice = 하이퍼 쥬스
-static_tile-jojamart-joja_cola_amped = 조자 콜 앰프드
+static_tile-jojamart-joja_cola_amped = 조자 콜라 앰프드
 static_tile-jojamart-sugar_free_lollipop = 설탕 제로 막대사탕
 static_tile-jojamart-drinkable_frosting = 설탕 음료
 static_tile-jojamart-cocoa_zeppelins = 코코아 제펠린즈
@@ -337,7 +337,7 @@ static_tile-jojamart-powdered_butter = 버터 가루
 static_tile-jojamart-joja_oil = 조자 식용유
 static_tile-jojamart-canola_oil = 카놀라유
 static_tile-jojamart-olive_oil = 올리브유
-static_tile-jojamart-marshmallows = 마시멜로우
+static_tile-jojamart-marshmallows = 마시멜로
 static_tile-jojamart-hair_gel = 헤어젤
 static_tile-jojamart-floss = 치실
 static_tile-jojamart-mouthwash = 가글
@@ -408,11 +408,11 @@ static_tile-mastery_cave-wall_of_mining = 채광의 벽
 
 # Mermaid House
 
-static_tile-mermaid_house-clam_shell_1 = 조개 껍질 1
-static_tile-mermaid_house-clam_shell_2 = 조개 껍질 2
-static_tile-mermaid_house-clam_shell_3 = 조개 껍질 3
-static_tile-mermaid_house-clam_shell_4 = 조개 껍질 4
-static_tile-mermaid_house-clam_shell_5 = 조개 껍질 5
+static_tile-mermaid_house-clam_shell_1 = 조개 껍데기 1
+static_tile-mermaid_house-clam_shell_2 = 조개 껍데기 2
+static_tile-mermaid_house-clam_shell_3 = 조개 껍데기 3
+static_tile-mermaid_house-clam_shell_4 = 조개 껍데기 4
+static_tile-mermaid_house-clam_shell_5 = 조개 껍데기 5
 
 # Mine
 
@@ -426,39 +426,39 @@ static_tile-mine-lava_pool = 용암못
 
 static_tile-mountain-mine_bridge = 광산다리
 static_tile-mountain-quarry_bridge = 채석장 다리
-static_tile-mountain-quarry_mine_entrance = 채석광산 입구
+static_tile-mountain-quarry_mine_entrance = 채석장 광산 입구
 static_tile-mountain-bridge_1 = 다리 1
 static_tile-mountain-bridge_2 = 다리 2
 static_tile-mountain-mountain_warp_statue = 산 워프 조각상
-static_tile-mountain-science_house_secondary_door = 로비과 드미트리우스의 집 후문
+static_tile-mountain-science_house_secondary_door = 로빈과 드미트리우스의 집 후문
 static_tile-mountain-linus_campfire = 라이너스의 캠프파이어
 
 # 영화관
 
-static_tile-movie_theater-concessions_counter = 매점 계산대
-static_tile-movie_theater-crane_game = 크레인 게임
+static_tile-movie_theater-concessions_counter = 매점 카운터
+static_tile-movie_theater-crane_game = 뽑기 게임
 static_tile-movie_theater-theater_door = 극장
-static_tile-movie_theater-town_entrance = 마을
+static_tile-movie_theater-town_entrance = 마을 입구
 
 # 치의 호두방
 
 static_tile-qi_nut_room-perfection_tracker = 완벽 추적기
-static_tile-qi_nut_room-vending_machine = 벤딩 머신
-static_tile-qi_nut_room-special_order_board = 특별의뢰게시판
+static_tile-qi_nut_room-vending_machine = 자판기
+static_tile-qi_nut_room-special_order_board = 특별주문게시판
 
 # Railroad
 
 static_tile-railroad-empty_box = 빈 상자
 static_tile-railroad-dumpster = 덤프스터
-static_tile-railroad-boulder = 큰 알돌
-static_tile-railroad-summit_boulder = 큰 알 돌
+static_tile-railroad-boulder = 바위
+static_tile-railroad-summit_boulder = 꼭대기 바위
 static_tile-railroad-water = 물
 
 # 스타드롭 주점
 
-static_tile-saloon-journey_of_the_prairie_king_arcade = 프레리 킹의 여행 아케이드 게임
-static_tile-saloon-junimo_kart_arcade = 쥬니모 카트 아케이드 게임
-static_tile-saloon-joja_vending_machine = 조자 벤딩 머신
+static_tile-saloon-journey_of_the_prairie_king_arcade = 대초원의 왕의 모험 아케이드 게임
+static_tile-saloon-junimo_kart_arcade = 주니모 카트 아케이드 게임
+static_tile-saloon-joja_vending_machine = 조자 자판기
 static_tile-saloon-jukebox = 쥬크박스
 static_tile-saloon-gus_fridge = 거스의 냉장고
 static_tile-saloon-gus_room_door = 거스의 방
@@ -466,7 +466,7 @@ static_tile-saloon-dining_room_door = 식당
 static_tile-saloon-living_area_door = 거실
 static_tile-saloon-gus_radio = 거스의 라디오
 static_tile-saloon-lockbox = 잠긴 상자
-static_tile-saloon-barstool = 주점 스툴 의자
+static_tile-saloon-barstool = 주점 스툴
 static_tile-saloon-table = 탁자
 
 # 버드나무 1길 집(조디, 켄트, 셈 and 빈센트)
@@ -487,7 +487,7 @@ static_tile-science_house-robin_wood_pile = 로빈의 목재더미
 static_tile-science_house-beaker_set = 비커 세트
 static_tile-science_house-microscope = 현미경
 static_tile-science_house-stereo_microscope = 쌍현미경
-static_tile-science_house-maru_device = 마루의 기기
+static_tile-science_house-maru_device = 마루의 장치
 static_tile-science_house-poster = 포스터
 static_tile-science_house-computer = 컴퓨터
 
@@ -495,7 +495,7 @@ static_tile-science_house-computer = 컴퓨터
 
 static_tile-sebastian_room-room_door = 방
 static_tile-sebastian_room-sebastian_radio = 세바스찬의 라디오
-static_tile-sebastian_room-graphic_novel = 그래픽 소설
+static_tile-sebastian_room-graphic_novel = 그림 소설
 static_tile-sebastian_room-computer = 컴퓨터
 
 # Pierre의 General Store
@@ -519,10 +519,10 @@ static_tile-skull_cave-skull_cavern_door = 해골 동굴
 
 # Slime Hutch
 
-static_tile-slime_hutch-water_trough_1 = 물통 1
-static_tile-slime_hutch-water_trough_2 = 물통 2
-static_tile-slime_hutch-water_trough_3 = 물통 3
-static_tile-slime_hutch-water_trough_4 = 물통 4
+static_tile-slime_hutch-water_trough_1 = 여물통 1
+static_tile-slime_hutch-water_trough_2 = 여물통 2
+static_tile-slime_hutch-water_trough_3 = 여물통 3
+static_tile-slime_hutch-water_trough_4 = 여물통 4
 
 # 잠수함
 
@@ -532,11 +532,11 @@ static_tile-submarine-deep_ocean = 깊은 바닷속
 
 static_tile-town-calender_board = 달력 게시판
 static_tile-town-daily_quest_board = 일일 의뢰 게시판
-static_tile-town-sewer = Sewer
+static_tile-town-sewer = 하수도
 static_tile-town-ice_cream_stand = 아이스크림 가판대
-static_tile-town-clinic_sign = 클리닉 간판
-static_tile-town-general_store_sign = 잡화상점 간판
-static_tile-town-faded_gravestone = 오래되고 빛바랜 묘비
+static_tile-town-clinic_sign = 병원 간판
+static_tile-town-general_store_sign = 잡화점 간판
+static_tile-town-faded_gravestone = 오래되고 바랜 묘비
 static_tile-town-mona_grave = 모나의 묘비
 static_tile-town-dwarvish_headstone = 드워프 묘비
 static_tile-town-unknown_gravestone = 신원 미상의 묘비
@@ -545,9 +545,9 @@ static_tile-town-joja_mart_trash = 조자마트 쓰래기통
 static_tile-town-1_river_road_trash = 강변로 1 쓰래기통
 static_tile-town-stardew_saloon_trash = 스타드롭 주점 쓰래기통
 static_tile-town-blacksmith_trash = 대장간 쓰래기통
-static_tile-town-1_willow_lane_trash = 버드나무1길 쓰래기통
-static_tile-town-manor_trash = 시장님의 저택 쓰래기통
-static_tile-town-2_willow_lane_trash = 버드나무2길 쓰래기통
+static_tile-town-1_willow_lane_trash = 버드나무길 1 쓰래기통
+static_tile-town-manor_trash = 시장님 저택 쓰래기통
+static_tile-town-2_willow_lane_trash = 버드나무길 2 쓰래기통
 static_tile-town-museum_trash = 박물관 쓰래기통
 static_tile-town-wooden_bridge = 나무다리
 static_tile-town-joja_bridge = 조자 다리
@@ -556,7 +556,7 @@ static_tile-town-museum_bridge = 박물관 다리
 static_tile-town-beach_bridge = 해변가 다리
 static_tile-town-smelter = 제련소
 static_tile-town-fountain = 분수
-static_tile-town-bookseller = 책팔이
+static_tile-town-bookseller = 서적상
 
 # 트레일러(펨과 페니의 집)
 
@@ -585,7 +585,7 @@ static_tile-wizard_house-basement_door = 지하실
 static_tile-wizard_house-magic_buildings_book = 마법건물 책
 
 static_tile-wizard_house_basement-exit_ladder = 출구 사다리
-static_tile-wizard_house_basement-witch_hut_rune = 마녀의 오두막 룬문자
+static_tile-wizard_house_basement-witch_hut_rune = 마녀의 오두막 룬 문자
 static_tile-wizard_house_basement-shrine_of_illusions = 환영의 제단
 
 # Other

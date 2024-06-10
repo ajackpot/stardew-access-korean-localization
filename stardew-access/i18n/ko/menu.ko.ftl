@@ -51,7 +51,7 @@ options_element-input_listener_info = {$label}은 {$buttons_list}에 지정되�
 
 ### 타일 Info 메뉴
 
-menu-tile_info-mark_타일 = 이 타일 마크하기
+menu-tile_info-mark_tile = 이 타일 마크하기
 menu-tile_info-select_marking_index = 색인 번호 선택
 menu-tile_info-add_to_user_tiles_data = 이 타일을 사용자 타일 데이터에 추가
 menu-tile_info-detailed_tile_info = 타일 세부정보 읽기

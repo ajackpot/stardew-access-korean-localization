@@ -35,8 +35,8 @@ feature-object_tracker-favorite_save = {$selected_object} ({$selected_category})
 feature-object_tracker-favorite_save_coordinates = {$coordinates} 좌표를 {$location_name} {$favorite_number}번 즐겨찾기에 저장하는 중
 feature-object_tracker-favorite_cleared = {$location_name} {$favorite_number}번 즐겨찾기 삭제됨
 feature-object_tracker-favorite_set_as_default = 현재 즐겨찾기를 기본값으로 저장하는 중
-feature-object_tracker-favorite_default_cleared =기본 즐겨찾기 초기화됨 
-feature-object_tracker-no_destination_selected =목적지 지정 안 함
+feature-object_tracker-favorite_default_cleared = 기본 즐겨찾기 초기화됨 
+feature-object_tracker-no_destination_selected = 목적지 지정 안 함
 
 ## Tile Viewer
 
@@ -49,7 +49,7 @@ feature-tile_viewer-cannot_move_to = {$tile_x}-{$tile_y} 좌표에 이동할 수
 feature-tile_viewer-stopped_moving = 이동 시작
 feature-tile_viewer-reached = 목적지에 도착함
 feature-tile_viewer-blocked_tile_name = 막힘
-feature-tile_viewer-empty_tile_name = 없음
+feature-tile_viewer-empty_tile_name = 공간
 
 ## Read Tile
 
@@ -220,7 +220,7 @@ tile_name-special_quest_board = 특별 주문 게시판
 tile-museum_piece_showcase-suffix = {$content} 진열대
 tile_name-fridge = 냉장고
 tile_name-mail_box = 우편함
-tile_name-mail_box-unread_mail_count-prefix = {$content} {$mail_count ->
+tile_name-mail_box-unread_mail_count-prefix = {$content}, {$mail_count ->
     [1] 안 읽은 편지
     *[0] 안 읽은 편지
   } {$mail_count}개
@@ -273,7 +273,8 @@ item-quality_type = {$quality_index ->
     [3] 금
     *[4] 이리듐
   } 품질
-item-stamina_and_health_recovery_on_consumption = {SIGNOFNUMBER($ stamina_amount) ->
+
+item-stamina_and_health_recovery_on_consumption = {SIGNOFNUMBER($stamina_amount) ->
     [positive] +{$stamina_amount} 기력과 {SIGNOFNUMBER($health_amount) ->
         [positive] 체력 +{$health_amount}
         *[other] {EMPTYSTRING()}
@@ -329,7 +330,7 @@ npc_name-ruby_gem_bird = 루비 보석새
 npc_name-amethyst_gem_bird = 자수정 보석새
 npc_name-topaz_gem_bird = 토파즈 보석새 
 npc_name-gem_bird_common = 보석새
-npc-farm_animal_info = {$name}, {$type}, {$age} {$age ->
+npc-farm_animal_info = {$name}, {$type}, {$age}살 {$age ->
     [1]개월
     *[other]개월
   }
@@ -380,22 +381,22 @@ terrain_util-fruit_tree_growth_stage = {$stage ->
     [1] 새싹
     [2] 묘목
     [3] 관목
-    *[other] 나무
+    *[other] {EMPTYSTRING()}
   }
 terrain_util-tree_type = {$type ->
-    [1] 참
-    [2] 단풍
-    [3] 소
-    [4] 참
-    [5] 단풍
-    [6] 종려
-    [7] 버섯
-    [8] 마호가니
-    [9] 종려
-    [10] 수북한 녹색
-    [11] 잎이 무성한 녹색
-    [12] 청나래 고사리
-    [13] 신비로운
+    [1] 참나무
+    [2] 단풍나무
+    [3] 소나무
+    [4] 참나무
+    [5] 단풍나무
+    [6] 종려나무
+    [7] 버섯나무
+    [8] 마호가니나무
+    [9] 종려나무
+    [10] 수북한 녹색 나무
+    [11] 잎이 무성한 녹색 나무
+    [12] 청나래 고사리 나무
+    [13] 신비로운 나무
     *[other] 알 수 없는 나무, 번호 {$type}번
   }
 terrain_util-tree-seedling = 모종 씨앗
@@ -406,11 +407,11 @@ terrain_util-tree_growth_stage = {$stage ->
     [2] 묘목
     [3] 관목 1단계
     [4] 관목 2단계
-    *[other] 나무
+    *[other] {EMPTYSTRING()}
   }
 terrain_util-bush_type = {$type ->
     [0] 작은
-    [1] 중간
+    [1] 중간 크기
     [2] 큰
     [3] 차 {$has_matured ->
       [0] 묘목
@@ -424,12 +425,12 @@ terrain_util-bush-town = 마을
 terrain_util-bush-greenhouse = 온실
 terrain_util-tent = 텐트
 terrain_util-tent_entrance = 텐트 입구
-terrain_util-crop-watered = 물 준
-terrain_util-crop-unwatered = 물 안 준
+terrain_util-crop-watered = 물 줌,
+terrain_util-crop-unwatered = 물 필요,
 terrain_util-crop-dead = 죽은
-terrain_util-crop-soil = 더러운
+terrain_util-crop-soil = 흙
 terrain_util-harvestable = 수확할 수 있는
-terrain_util-fertilized = 비료 친
+terrain_util-fertilized = 비료 쳐짐,
 
 
 # Object Categories
@@ -453,7 +454,7 @@ object_category-furniture = 가구
 object_category-interactables = 상호작용 가능
 object_category-machines = 기계
 object_category-mine_items = 광산 아이템
-object_category-npcs = NPC 소유물
+object_category-npcs = NPC
 object_category-pending = 보류중
 object_category-quest_items = 퀘스트 아이템
 object_category-ready = 준비

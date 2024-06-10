@@ -116,7 +116,7 @@ static_tile-beach_night_market-mermaid_boat_door = 인어 보트
 static_tile-beach_night_market-famous_painter_lupini = 유명한 화가 루피니
 static_tile-beach_night_market-shrouded_figure = 신비로운 사람
 static_tile-beach_night_market-decoration_boat = 장식물 보트
-static_tile-beach_night_market-magic_shop_boat = 마법 ##	상점 보트
+static_tile-beach_night_market-magic_shop_boat = 마법 ##    상점 보트
 
 # Blacksmith
 
@@ -469,7 +469,7 @@ static_tile-saloon-lockbox = 잠긴 상자
 static_tile-saloon-barstool = 주점 스툴
 static_tile-saloon-table = 탁자
 
-# 버드나무 1길 집(조디, 켄트, 셈 and 빈센트)
+# 버드나무 1길 집(조디, 켄트, 셈과 빈센트)
 
 static_tile-sam_house-radio = 라디오
 static_tile-sam_house-vincent_room_door = 빈센트의 방
